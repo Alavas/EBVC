@@ -12,18 +12,18 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(1): </Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(24): </Dynamic>
             <Dynamic>Main</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>1</Navigation>
+            <Navigation>24</Navigation>
         </Message>
         <Message>
             <ID>35901220</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(13): </Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(36): </Dynamic>
             <Dynamic>STCK</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>13</Navigation>
+            <Navigation>36</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -36,158 +36,167 @@
         <Message>
             <ID>35901221</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(123): </Dynamic>
-            <Dynamic>counter</Dynamic>
-            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>123</Navigation>
-        </Message>
-        <Message>
-            <ID>35901221</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(124): </Dynamic>
-            <Dynamic>SREG</Dynamic>
-            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>124</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(129): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>21</Dynamic>
-            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>129</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(140): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>8</Dynamic>
-            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>140</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(146): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>8</Dynamic>
-            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>146</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(147): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>3</Dynamic>
-            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>147</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(152): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>3</Dynamic>
-            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>152</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
             <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(157): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>3</Dynamic>
+            <Dynamic>counter</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
             <Navigation>157</Navigation>
         </Message>
         <Message>
-            <ID>35901209</ID>
+            <ID>35901221</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(162): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>3</Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(158): </Dynamic>
+            <Dynamic>SREG</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>162</Navigation>
+            <Navigation>158</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(167): </Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(163): </Dynamic>
             <Dynamic>32</Dynamic>
-            <Dynamic>3</Dynamic>
+            <Dynamic>21</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>167</Navigation>
+            <Navigation>163</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(170): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>8</Dynamic>
-            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>170</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(171): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>3</Dynamic>
-            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>171</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(175): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>3</Dynamic>
-            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>175</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(338): </Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(174): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>8</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>338</Navigation>
+            <Navigation>174</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(343): </Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(180): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>8</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>343</Navigation>
+            <Navigation>180</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(393): </Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(181): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>181</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(186): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>186</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(191): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>191</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(195): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>195</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(196): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>196</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(201): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>201</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(204): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>204</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(205): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>205</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(209): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>209</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(372): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>372</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(377): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>377</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(427): </Dynamic>
             <Dynamic>9</Dynamic>
             <Dynamic>8</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>393</Navigation>
+            <Navigation>427</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(944): </Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(1067): </Dynamic>
             <Dynamic>9</Dynamic>
             <Dynamic>8</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>944</Navigation>
+            <Navigation>1067</Navigation>
         </Message>
         <Message>
             <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>n1750</Dynamic>
+            <Dynamic>n1847</Dynamic>
         </Message>
         <Message>
             <ID>35002005</ID>

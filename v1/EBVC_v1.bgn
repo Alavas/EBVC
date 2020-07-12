@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Jul 11 19:55:48 2020
+Sun Jul 12 11:06:23 2020
 
 
 Command: bitgen -g RamCfg:Reset -path C:/Users/Justin/OneDrive/Projects/EBVC -w -jedec -gui -msgset C:/Users/Justin/OneDrive/Projects/EBVC/promote.xml EBVC_v1.ncd EBVC_v1.prf 
@@ -83,5 +83,5 @@ Available General Purpose Flash Memory:  511 Pages (Page 0 to Page 510).
 Initialized UFM Pages:                     0 Page.
  
 Total CPU Time: 3 secs 
-Total REAL Time: 4 secs 
+Total REAL Time: 3 secs 
 Peak Memory Usage: 255 MB

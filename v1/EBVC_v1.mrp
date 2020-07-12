@@ -14,22 +14,22 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-1200HCQFN32
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.11.0.396.4
-Mapped on:  07/11/20  19:55:35
+Mapped on:  07/12/20  11:06:10
 
 Design Summary
 --------------
 
-   Number of registers:    146 out of  1346 (11%)
-      PFU registers:          146 out of  1280 (11%)
+   Number of registers:    148 out of  1346 (11%)
+      PFU registers:          148 out of  1280 (12%)
       PIO registers:            0 out of    66 (0%)
-   Number of SLICEs:       274 out of   640 (43%)
-      SLICEs as Logic/ROM:    274 out of   640 (43%)
+   Number of SLICEs:       334 out of   640 (52%)
+      SLICEs as Logic/ROM:    334 out of   640 (52%)
       SLICEs as RAM:            0 out of   480 (0%)
-      SLICEs as Carry:         26 out of   640 (4%)
-   Number of LUT4s:        547 out of  1280 (43%)
-      Number used as logic LUTs:        495
+      SLICEs as Carry:         46 out of   640 (7%)
+   Number of LUT4s:        666 out of  1280 (52%)
+      Number used as logic LUTs:        574
       Number used as distributed RAM:     0
-      Number used as ripple logic:       52
+      Number used as ripple logic:       92
       Number used as shift registers:     0
    Number of PIO sites used: 16 + 4(JTAG) out of 22 (91%)
    Number of block RAMs:  2 out of 7 (29%)
@@ -57,8 +57,8 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  2
-     Net MEMADDR_c_12: 86 loads, 35 rising, 51 falling (Driver:
-     counter_4360_4398__i12 )
+     Net MEMADDR_c_12: 87 loads, 36 rising, 51 falling (Driver:
+     counter_3910_3955__i12 )
      Net clk: 7 loads, 7 rising, 0 falling (Driver: internal_oscillator_inst )
 
                                     Page 1
@@ -66,43 +66,45 @@ Design Summary
 
 
 
-Design:  Main                                          Date:  07/11/20  19:55:35
+Design:  Main                                          Date:  07/12/20  11:06:10
 
 Design Summary (cont)
 ---------------------
-   Number of Clock Enables:  19
-     Net counter_12__N_25_enable_18: 4 loads, 4 LSLICEs
-     Net counter_12__N_25_enable_67: 4 loads, 4 LSLICEs
-     Net counter_12__N_25_enable_64: 4 loads, 4 LSLICEs
-     Net counter_12__N_25_enable_27: 4 loads, 4 LSLICEs
-     Net counter_12__N_25_enable_71: 1 loads, 1 LSLICEs
-     Net counter_12__N_25_enable_57: 5 loads, 5 LSLICEs
-     Net counter_12__N_25_enable_26: 8 loads, 8 LSLICEs
-     Net counter_12__N_25_enable_35: 8 loads, 8 LSLICEs
-     Net MEMADDR_c_12_enable_23: 6 loads, 5 LSLICEs
-     Net counter_12__N_25_enable_68: 1 loads, 1 LSLICEs
-     Net counter_12__N_25_enable_72: 4 loads, 4 LSLICEs
+   Number of Clock Enables:  21
+     Net counter_12__N_25_enable_12: 4 loads, 4 LSLICEs
+     Net counter_12__N_25_enable_58: 4 loads, 4 LSLICEs
+     Net counter_12__N_25_enable_51: 4 loads, 4 LSLICEs
+     Net MEMADDR_c_12_enable_26: 6 loads, 6 LSLICEs
+     Net MEMADDR_c_12_enable_24: 6 loads, 5 LSLICEs
+     Net counter_12__N_25_enable_44: 5 loads, 5 LSLICEs
+     Net counter_12__N_25_enable_35: 4 loads, 4 LSLICEs
+     Net counter_12__N_25_enable_20: 8 loads, 8 LSLICEs
+     Net counter_12__N_25_enable_28: 8 loads, 8 LSLICEs
+     Net counter_12__N_25_enable_73: 4 loads, 4 LSLICEs
+     Net counter_12__N_25_enable_64: 1 loads, 1 LSLICEs
      Net MEMADDR_c_6: 2 loads, 2 LSLICEs
-     Net counter_12__N_25_enable_38: 1 loads, 1 LSLICEs
+     Net MEMADDR_c_12_enable_25: 1 loads, 0 LSLICEs
      Net counter_12__N_25_enable_37: 1 loads, 1 LSLICEs
-     Net counter_12__N_25_enable_45: 1 loads, 1 LSLICEs
-     Net MEMADDR_c_12_enable_24: 1 loads, 0 LSLICEs
-     Net counter_12__N_25_enable_69: 1 loads, 1 LSLICEs
-     Net counter_12__N_25_enable_70: 1 loads, 1 LSLICEs
-     Net MEMADDR_c_12_enable_20: 5 loads, 5 LSLICEs
+     Net MEMADDR_6__N_23: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_59: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_60: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_61: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_62: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_63: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_72: 1 loads, 1 LSLICEs
    Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net IREG_1: 103 loads
-     Net IREG_2: 100 loads
-     Net IREG_0: 87 loads
-     Net IREG_4: 87 loads
-     Net IREG_3: 70 loads
-     Net IREG_6: 69 loads
-     Net IREG_5: 50 loads
-     Net SCNT_0: 39 loads
-     Net IREG_7: 36 loads
-     Net SCNT_1: 24 loads
+     Net IREG_1: 145 loads
+     Net IREG_2: 137 loads
+     Net IREG_0: 97 loads
+     Net IREG_6: 77 loads
+     Net IREG_3: 65 loads
+     Net IREG_5: 60 loads
+     Net IREG_4: 58 loads
+     Net IREG_7: 49 loads
+     Net SCNT_0: 42 loads
+     Net n15196: 25 loads
 
 
 
@@ -123,8 +125,6 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| PORTA[5]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
 | PORTA[6]            | OUTPUT    | LVCMOS25  |            |
 
                                     Page 2
@@ -132,7 +132,7 @@ IO (PIO) Attributes
 
 
 
-Design:  Main                                          Date:  07/11/20  19:55:35
+Design:  Main                                          Date:  07/12/20  11:06:10
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -165,52 +165,66 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | PORTA[4]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
+| PORTA[5]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
 
 Removed logic
 -------------
 
 Block GSR_INST undriven or does not drive anything - clipped.
 Signal counter_12__N_25 was merged into signal MEMADDR_c_12
-Signal MEMADDR_c_12_enable_11 was merged into signal MEMADDR_c_6
+Signal MEMADDR_c_12_enable_20 was merged into signal MEMADDR_c_6
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal equal_4421_0/S1 undriven or does not drive anything - clipped.
-Signal equal_4421_0/S0 undriven or does not drive anything - clipped.
-Signal equal_4421_0/CI undriven or does not drive anything - clipped.
-Signal equal_4421_7/S1 undriven or does not drive anything - clipped.
-Signal equal_4421_7/S0 undriven or does not drive anything - clipped.
-Signal equal_4421_8/S0 undriven or does not drive anything - clipped.
-Signal equal_4421_8/CO undriven or does not drive anything - clipped.
-Signal counter_4360_4398_add_4_1/S0 undriven or does not drive anything -
-     clipped.
-Signal counter_4360_4398_add_4_1/CI undriven or does not drive anything -
-     clipped.
-Signal counter_4360_4398_add_4_13/CO undriven or does not drive anything -
-     clipped.
-Signal PCNT_4358_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal PCNT_4358_add_4_1/CI undriven or does not drive anything - clipped.
-Signal PCNT_4358_add_4_9/S1 undriven or does not drive anything - clipped.
-Signal PCNT_4358_add_4_9/CO undriven or does not drive anything - clipped.
-Signal add_1157_1/S1 undriven or does not drive anything - clipped.
-Signal add_1157_1/S0 undriven or does not drive anything - clipped.
+Signal add_1296_9/CO undriven or does not drive anything - clipped.
+Signal add_1276_1/S1 undriven or does not drive anything - clipped.
+Signal add_1276_1/S0 undriven or does not drive anything - clipped.
+Signal add_1276_1/CI undriven or does not drive anything - clipped.
+Signal equal_3978_0/S1 undriven or does not drive anything - clipped.
+Signal equal_3978_0/S0 undriven or does not drive anything - clipped.
+Signal equal_3978_0/CI undriven or does not drive anything - clipped.
+Signal add_1276_9/CO undriven or does not drive anything - clipped.
+Signal equal_3978_7/S1 undriven or does not drive anything - clipped.
+Signal equal_3978_7/S0 undriven or does not drive anything - clipped.
+Signal add_1300_1/S0 undriven or does not drive anything - clipped.
+Signal add_1300_1/CI undriven or does not drive anything - clipped.
+Signal equal_3978_8/S0 undriven or does not drive anything - clipped.
+Signal equal_3978_8/CO undriven or does not drive anything - clipped.
+Signal add_1331_1/S1 undriven or does not drive anything - clipped.
+Signal add_1331_1/S0 undriven or does not drive anything - clipped.
+Signal add_1331_1/CI undriven or does not drive anything - clipped.
 
                                     Page 3
 
 
 
 
-Design:  Main                                          Date:  07/11/20  19:55:35
+Design:  Main                                          Date:  07/12/20  11:06:10
 
 Removed logic (cont)
 --------------------
-Signal add_1157_1/CI undriven or does not drive anything - clipped.
-Signal add_1157_9/CO undriven or does not drive anything - clipped.
-Signal add_1194_1/S1 undriven or does not drive anything - clipped.
-Signal add_1194_1/S0 undriven or does not drive anything - clipped.
-Signal add_1194_1/CI undriven or does not drive anything - clipped.
-Signal add_1194_11/S1 undriven or does not drive anything - clipped.
-Signal add_1194_11/CO undriven or does not drive anything - clipped.
-Block i11495 was optimized away.
-Block i3862_1_lut_rep_203 was optimized away.
+Signal add_1288_9/CO undriven or does not drive anything - clipped.
+Signal add_1288_1/S0 undriven or does not drive anything - clipped.
+Signal add_1288_1/CI undriven or does not drive anything - clipped.
+Signal add_1300_9/CO undriven or does not drive anything - clipped.
+Signal PCNT_3911_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal PCNT_3911_add_4_1/CI undriven or does not drive anything - clipped.
+Signal PCNT_3911_add_4_9/S1 undriven or does not drive anything - clipped.
+Signal PCNT_3911_add_4_9/CO undriven or does not drive anything - clipped.
+Signal counter_3910_3955_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal counter_3910_3955_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal counter_3910_3955_add_4_13/CO undriven or does not drive anything -
+     clipped.
+Signal add_1292_9/CO undriven or does not drive anything - clipped.
+Signal add_1331_11/S1 undriven or does not drive anything - clipped.
+Signal add_1331_11/CO undriven or does not drive anything - clipped.
+Signal add_1296_1/S0 undriven or does not drive anything - clipped.
+Signal add_1296_1/CI undriven or does not drive anything - clipped.
+Signal add_1292_1/S0 undriven or does not drive anything - clipped.
+Signal add_1292_1/CI undriven or does not drive anything - clipped.
+Block i11985 was optimized away.
+Block i18_1_lut_rep_276 was optimized away.
 Block i2 was optimized away.
 
 Memory Usage
@@ -219,8 +233,8 @@ Memory Usage
 /:
     EBRs: 2
     RAM SLICEs: 0
-    Logic SLICEs: 229
-    PFU Registers: 146
+    Logic SLICEs: 282
+    PFU Registers: 148
     -Contains EBR memory_d00:  TYPE= DP8KC,  Width_A= 8,  Depth_A= 256,
          Depth_B= 256,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
          ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= READBEFOREWRITE,  WRITEMODE_B=
@@ -242,6 +256,16 @@ OSC 1:                                     Pin/Node Value
   OSC Output:                              NODE     clk
   OSC Nominal Frequency (MHz):                      2.08
 
+
+
+
+                                    Page 4
+
+
+
+
+Design:  Main                                          Date:  07/12/20  11:06:10
+
 ASIC Components
 ---------------
 
@@ -257,32 +281,8 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 42 MB
-
-                                    Page 4
-
-
-
-
-Design:  Main                                          Date:  07/11/20  19:55:35
-
-Run Time and Memory Usage (cont)
---------------------------------
+   Peak Memory Usage: 43 MB
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
