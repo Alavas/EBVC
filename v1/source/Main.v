@@ -130,8 +130,8 @@ module Main (PORTA,MEMADDR);
 				CMP = 8'b01100001,	// 61 | 2 Byte | Compare ALU with Memory Value
 				CMI = 8'b01100010,	// 62 | 2 Byte | Compare ALU with Immediate Value
 				CPX = 8'b01100011,	// 63 | 1 Byte | Compare ALU with X Register
-				CPY = 8'b01100100,	// 64 | 1 Byte | Compare ALU with Y Register		- TODO
-				CPZ = 8'b01100101,	// 65 | 1 Byte | Compare ALU with Z Register		- TODO
+				CPY = 8'b01100100,	// 64 | 1 Byte | Compare ALU with Y Register
+				CPZ = 8'b01100101,	// 65 | 1 Byte | Compare ALU with Z Register
 				CLC = 8'b01100110,	// 66 | 1 Byte | Clear Carry Flag
 				//Output Register
 				CLO = 8'b10000001,	// 81 | 1 Byte | Clear PORTA Register
@@ -141,9 +141,9 @@ module Main (PORTA,MEMADDR);
 				OTA = 8'b10000101,	// 85 | 1 Byte | Output ALU to PORTA
 				//Halt
 				HLT = 8'b11111111,	// FF | 1 Byte | Halt Counter
-				CF	= 1'b1,			// Carry Flag
+				CF  = 1'b1,			// Carry Flag
 				ZF  = 1'b0,			// Zero Flag
-				CD	= 12;			// Clock Divider
+				CD  = 12;			// Clock Divider
 	//Clock
 	OSCH #(
 		.NOM_FREQ("2.08")
