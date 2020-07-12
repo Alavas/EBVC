@@ -1,0 +1,15 @@
+00 //NOP
+1C //CLA
+11 //LDZ
+F0 //Address
+23 //ADZ
+46 //JSR
+0C //Address
+1B //STA
+F0 //Address
+85 //OTA
+41 //JMP
+00 //Address
+25 //ADI
+01 //Value
+47 //RSR

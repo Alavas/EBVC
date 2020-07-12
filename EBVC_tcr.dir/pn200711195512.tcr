@@ -1,0 +1,9 @@
+#Start recording tcl command: 7/11/2020 19:53:11
+#Project Location: C:/Users/Justin/OneDrive/Projects/EBVC; Project name: EBVC
+prj_project new -name "EBVC" -impl "v1" -dev LCMXO2-1200HC-4SG32C -synthesis "lse"
+file copy -force -- "C:/Users/Justin/OneDrive/Projects/FPGA_Computer/Main.v" "C:/Users/Justin/OneDrive/Projects/EBVC/v1/source"
+prj_src add "C:/Users/Justin/OneDrive/Projects/EBVC/v1/source/Main.v"
+prj_project save
+prj_project save
+prj_project close
+#Stop recording: 7/11/2020 19:55:12

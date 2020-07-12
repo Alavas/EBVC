@@ -1,0 +1,336 @@
+
+             Lattice Mapping Report File for Design Module 'Main'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-1200HC -t QFN32 -s 4 -oc Commercial
+     EBVC_v1.ngd -o EBVC_v1_map.ncd -pr EBVC_v1.prf -mp EBVC_v1.mrp -lpf
+     C:/Users/Justin/OneDrive/Projects/EBVC/v1/EBVC_v1.lpf -lpf
+     C:/Users/Justin/OneDrive/Projects/EBVC/EBVC.lpf -c 0 -gui -msgset
+     C:/Users/Justin/OneDrive/Projects/EBVC/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-1200HCQFN32
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.11.0.396.4
+Mapped on:  07/11/20  19:55:35
+
+Design Summary
+--------------
+
+   Number of registers:    146 out of  1346 (11%)
+      PFU registers:          146 out of  1280 (11%)
+      PIO registers:            0 out of    66 (0%)
+   Number of SLICEs:       274 out of   640 (43%)
+      SLICEs as Logic/ROM:    274 out of   640 (43%)
+      SLICEs as RAM:            0 out of   480 (0%)
+      SLICEs as Carry:         26 out of   640 (4%)
+   Number of LUT4s:        547 out of  1280 (43%)
+      Number used as logic LUTs:        495
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       52
+      Number used as shift registers:     0
+   Number of PIO sites used: 16 + 4(JTAG) out of 22 (91%)
+   Number of block RAMs:  2 out of 7 (29%)
+   Number of GSRs:        0 out of 1 (0%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : Yes
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 1 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net MEMADDR_c_12: 86 loads, 35 rising, 51 falling (Driver:
+     counter_4360_4398__i12 )
+     Net clk: 7 loads, 7 rising, 0 falling (Driver: internal_oscillator_inst )
+
+                                    Page 1
+
+
+
+
+Design:  Main                                          Date:  07/11/20  19:55:35
+
+Design Summary (cont)
+---------------------
+   Number of Clock Enables:  19
+     Net counter_12__N_25_enable_18: 4 loads, 4 LSLICEs
+     Net counter_12__N_25_enable_67: 4 loads, 4 LSLICEs
+     Net counter_12__N_25_enable_64: 4 loads, 4 LSLICEs
+     Net counter_12__N_25_enable_27: 4 loads, 4 LSLICEs
+     Net counter_12__N_25_enable_71: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_57: 5 loads, 5 LSLICEs
+     Net counter_12__N_25_enable_26: 8 loads, 8 LSLICEs
+     Net counter_12__N_25_enable_35: 8 loads, 8 LSLICEs
+     Net MEMADDR_c_12_enable_23: 6 loads, 5 LSLICEs
+     Net counter_12__N_25_enable_68: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_72: 4 loads, 4 LSLICEs
+     Net MEMADDR_c_6: 2 loads, 2 LSLICEs
+     Net counter_12__N_25_enable_38: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_37: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_45: 1 loads, 1 LSLICEs
+     Net MEMADDR_c_12_enable_24: 1 loads, 0 LSLICEs
+     Net counter_12__N_25_enable_69: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_70: 1 loads, 1 LSLICEs
+     Net MEMADDR_c_12_enable_20: 5 loads, 5 LSLICEs
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net IREG_1: 103 loads
+     Net IREG_2: 100 loads
+     Net IREG_0: 87 loads
+     Net IREG_4: 87 loads
+     Net IREG_3: 70 loads
+     Net IREG_6: 69 loads
+     Net IREG_5: 50 loads
+     Net SCNT_0: 39 loads
+     Net IREG_7: 36 loads
+     Net SCNT_1: 24 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| PORTA[5]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| PORTA[6]            | OUTPUT    | LVCMOS25  |            |
+
+                                    Page 2
+
+
+
+
+Design:  Main                                          Date:  07/11/20  19:55:35
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| PORTA[7]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MEMADDR[0]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MEMADDR[1]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MEMADDR[2]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MEMADDR[3]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MEMADDR[4]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MEMADDR[5]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MEMADDR[6]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MEMADDR[7]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| PORTA[0]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| PORTA[1]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| PORTA[2]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| PORTA[3]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| PORTA[4]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal counter_12__N_25 was merged into signal MEMADDR_c_12
+Signal MEMADDR_c_12_enable_11 was merged into signal MEMADDR_c_6
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal equal_4421_0/S1 undriven or does not drive anything - clipped.
+Signal equal_4421_0/S0 undriven or does not drive anything - clipped.
+Signal equal_4421_0/CI undriven or does not drive anything - clipped.
+Signal equal_4421_7/S1 undriven or does not drive anything - clipped.
+Signal equal_4421_7/S0 undriven or does not drive anything - clipped.
+Signal equal_4421_8/S0 undriven or does not drive anything - clipped.
+Signal equal_4421_8/CO undriven or does not drive anything - clipped.
+Signal counter_4360_4398_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal counter_4360_4398_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal counter_4360_4398_add_4_13/CO undriven or does not drive anything -
+     clipped.
+Signal PCNT_4358_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal PCNT_4358_add_4_1/CI undriven or does not drive anything - clipped.
+Signal PCNT_4358_add_4_9/S1 undriven or does not drive anything - clipped.
+Signal PCNT_4358_add_4_9/CO undriven or does not drive anything - clipped.
+Signal add_1157_1/S1 undriven or does not drive anything - clipped.
+Signal add_1157_1/S0 undriven or does not drive anything - clipped.
+
+                                    Page 3
+
+
+
+
+Design:  Main                                          Date:  07/11/20  19:55:35
+
+Removed logic (cont)
+--------------------
+Signal add_1157_1/CI undriven or does not drive anything - clipped.
+Signal add_1157_9/CO undriven or does not drive anything - clipped.
+Signal add_1194_1/S1 undriven or does not drive anything - clipped.
+Signal add_1194_1/S0 undriven or does not drive anything - clipped.
+Signal add_1194_1/CI undriven or does not drive anything - clipped.
+Signal add_1194_11/S1 undriven or does not drive anything - clipped.
+Signal add_1194_11/CO undriven or does not drive anything - clipped.
+Block i11495 was optimized away.
+Block i3862_1_lut_rep_203 was optimized away.
+Block i2 was optimized away.
+
+Memory Usage
+------------
+
+/:
+    EBRs: 2
+    RAM SLICEs: 0
+    Logic SLICEs: 229
+    PFU Registers: 146
+    -Contains EBR memory_d00:  TYPE= DP8KC,  Width_A= 8,  Depth_A= 256,
+         Depth_B= 256,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= READBEFOREWRITE,  WRITEMODE_B=
+         NORMAL,  GSR= DISABLED
+    -Contains EBR memory0:  TYPE= DP8KC,  Width_B= 8,  Depth_A= 256,  Depth_B=
+         256,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= WRITETHROUGH,  WRITEMODE_B=
+         WRITETHROUGH,  GSR= DISABLED
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                internal_oscillator_inst
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     clk
+  OSC Nominal Frequency (MHz):                      2.08
+
+ASIC Components
+---------------
+
+Instance Name: internal_oscillator_inst
+         Type: OSCH
+Instance Name: memory_d00
+         Type: DP8KC
+Instance Name: memory0
+         Type: DP8KC
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 42 MB
+
+                                    Page 4
+
+
+
+
+Design:  Main                                          Date:  07/11/20  19:55:35
+
+Run Time and Memory Usage (cont)
+--------------------------------
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 5
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights
+     reserved.

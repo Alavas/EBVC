@@ -1,0 +1,39 @@
+[ActiveSupport MAP]
+Device = LCMXO2-1200HC;
+Package = QFN32;
+Performance = 4;
+LUTS_avail = 1280;
+LUTS_used = 547;
+FF_avail = 1302;
+FF_used = 146;
+OUTPUT_LVCMOS25 = 16;
+IO_avail = 22;
+IO_used = 16;
+EBR_avail = 7;
+EBR_used = 2;
+; Begin EBR Section
+Instance_Name = memory_d00;
+Type = DP8KC;
+Width_A = 8;
+Depth_A = 256;
+Depth_B = 256;
+REGMODE_A = NOREG;
+REGMODE_B = NOREG;
+RESETMODE = SYNC;
+ASYNC_RESET_RELEASE = SYNC;
+WRITEMODE_A = READBEFOREWRITE;
+WRITEMODE_B = NORMAL;
+GSR = DISABLED;
+Instance_Name = memory0;
+Type = DP8KC;
+Width_B = 8;
+Depth_A = 256;
+Depth_B = 256;
+REGMODE_A = NOREG;
+REGMODE_B = NOREG;
+RESETMODE = SYNC;
+ASYNC_RESET_RELEASE = SYNC;
+WRITEMODE_A = WRITETHROUGH;
+WRITEMODE_B = WRITETHROUGH;
+GSR = DISABLED;
+; End EBR Section
