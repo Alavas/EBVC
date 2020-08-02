@@ -177,7 +177,7 @@ module Main (PORTA,MEMADDR);
 			if (SC || SCNT == 0) begin
 				IREG	<= memory[PCNT];	// Set Instruction Register to Memory value.
 				PCNT 	<= PCNT + 1; 		// Increment the Program Counter.
-				SCNT 	<= 1;					// Increment the Step Counter
+				SCNT 	<= 1;				// Increment the Step Counter
 			end
 			//Set RAM to value from memory.
 			else if (RI) begin
@@ -222,22 +222,22 @@ module Main (PORTA,MEMADDR);
 		case(IREG) 
 			// No Operation
 			NOP : begin
-					SC	<= 1;							//Reset the Step Counter.
+					SC	<= 1;									//Reset the Step Counter.
 				end
 			// Load X Register from Memory Address
 			LDX : begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
 								RI			<= 0;				//RAM IN Disabled.
 								RO			<= 1;				//RAM OUT Enabled.
-								stack[STCK]	<= RAM;		//Put RAM on the Stack.
+								stack[STCK]	<= RAM;				//Put RAM on the Stack.
 							end
 						4'b0011: begin
-								RO 		<= 0; 			//RAM OUT Disabled,
-								XREG 		<= RAM;			//Load X Register from RAM.
+								RO 		<= 0; 					//RAM OUT Disabled,
+								XREG 		<= RAM;				//Load X Register from RAM.
 								SC			<= 1;				//Reset the Step Counter.
 							end
 					endcase
@@ -246,12 +246,12 @@ module Main (PORTA,MEMADDR);
 			LIX	: begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
-								RI 		<= 0; 			//RAM IN Disabled.
-								XREG 		<= RAM;			//Load X Register from RAM.
-								SC 		<= 1;				//Reset the Step Counter.
+								RI 		<= 0; 					//RAM IN Disabled.
+								XREG 		<= RAM;				//Load X Register from RAM.
+								SC 		<= 1;					//Reset the Step Counter.
 							end
 					endcase
 				end
@@ -259,17 +259,17 @@ module Main (PORTA,MEMADDR);
 			STX : begin		
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
-								RI 		<= 0; 			//RAM IN Disabled.
+								RI 		<= 0; 					//RAM IN Disabled.
 								MI			<= 1;				//Memory IN Enabled.
-								stack[STCK]	<= RAM;		//Put address on the Stack.
+								stack[STCK]	<= RAM;				//Put address on the Stack.
 								stack[STCK + 1] <= XREG;
 							end
 						4'b0011: begin
 								MI			<= 0;				//Memory IN Disabled.
-								SC 		<= 1;				//Reset the Step Counter.
+								SC 		<= 1;					//Reset the Step Counter.
 							end
 					endcase
 				end
@@ -277,16 +277,16 @@ module Main (PORTA,MEMADDR);
 			LDY : begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
 								RI			<= 0;				//RAM IN Disabled.
 								RO			<= 1;				//RAM OUT Enabled.
-								stack[STCK]	<= RAM;		//Put RAM on the Stack.
+								stack[STCK]	<= RAM;				//Put RAM on the Stack.
 							end
 						4'b0011: begin
-								RO 		<= 0; 			//RAM OUT Disabled,
-								YREG 		<= RAM;			//Load Y Register from RAM.
+								RO 		<= 0; 					//RAM OUT Disabled,
+								YREG 		<= RAM;				//Load Y Register from RAM.
 								SC			<= 1;				//Reset the Step Counter.
 							end
 					endcase
@@ -295,12 +295,12 @@ module Main (PORTA,MEMADDR);
 			LIY : begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
-								RI 		<= 0; 			//RAM IN Disabled.
-								YREG 		<= RAM;			//Load Y Register from RAM.
-								SC 		<= 1;				//Reset the Step Counter.
+								RI 		<= 0; 					//RAM IN Disabled.
+								YREG 		<= RAM;				//Load Y Register from RAM.
+								SC 		<= 1;					//Reset the Step Counter.
 							end
 					endcase
 				end
@@ -308,17 +308,17 @@ module Main (PORTA,MEMADDR);
 			STY : begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
-								RI 		<= 0; 			//RAM IN Disabled.
+								RI 		<= 0; 					//RAM IN Disabled.
 								MI			<= 1;				//Memory IN Enabled.
-								stack[STCK]	<= RAM;		//Put address on the Stack.
+								stack[STCK]	<= RAM;				//Put address on the Stack.
 								stack[STCK + 1] <= YREG;
 							end
 						4'b0011: begin
 								MI			<= 0;				//Memory IN Disabled.
-								SC 		<= 1;				//Reset the Step Counter.
+								SC 		<= 1;					//Reset the Step Counter.
 							end
 					endcase
 				end
@@ -326,16 +326,16 @@ module Main (PORTA,MEMADDR);
 			LDZ : begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
 								RI			<= 0;				//RAM IN Disabled.
 								RO			<= 1;				//RAM OUT Enabled.
-								stack[STCK]	<= RAM;		//Put RAM on the Stack.
+								stack[STCK]	<= RAM;				//Put RAM on the Stack.
 							end
 						4'b0011: begin
-								RO 		<= 0; 			//RAM OUT Disabled,
-								ZREG 		<= RAM;			//Load Z Register from RAM.
+								RO 		<= 0; 					//RAM OUT Disabled,
+								ZREG 		<= RAM;				//Load Z Register from RAM.
 								SC			<= 1;				//Reset the Step Counter.
 							end
 					endcase
@@ -344,12 +344,12 @@ module Main (PORTA,MEMADDR);
 			LIZ : begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
-								RI 		<= 0; 			//RAM IN Disabled.
-								ZREG 		<= RAM;			//Load Z Register from RAM.
-								SC 		<= 1;				//Reset the Step Counter.
+								RI 		<= 0; 					//RAM IN Disabled.
+								ZREG 		<= RAM;				//Load Z Register from RAM.
+								SC 		<= 1;					//Reset the Step Counter.
 							end
 					endcase
 				end
@@ -357,29 +357,29 @@ module Main (PORTA,MEMADDR);
 			STZ : begin
 				case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
-								RI 		<= 0;		 		//RAM IN Disabled.
+								RI 		<= 0;		 			//RAM IN Disabled.
 								MI			<= 1;				//Memory IN Enabled.
-								stack[STCK]	<= RAM;		//Put address on the Stack.
+								stack[STCK]	<= RAM;				//Put address on the Stack.
 								stack[STCK + 1] <= ZREG;
 							end
 						4'b0011: begin
 								MI			<= 0;				//Memory IN Disabled.
-								SC 		<= 1;				//Reset the Step Counter.
+								SC 		<= 1;					//Reset the Step Counter.
 							end
 					endcase
 				end
 			// Increment Z Register
 			INZ : begin
 					SC		<= 1;								//Reset the Step Counter.
-					ZREG 	<= ZREG + 1;					//Add 1 to the Z Register.
+					ZREG 	<= ZREG + 1;						//Add 1 to the Z Register.
 				end	
 			// Decrement Z Register
 			DEZ : begin
 					SC		<= 1;								//Reset the Step Counter.
-					ZREG	<= ZREG - 1;					//Subtract 1 from the Z Register.
+					ZREG	<= ZREG - 1;						//Subtract 1 from the Z Register.
 				end
 			// Clear Z Register
 			CLZ : begin
@@ -390,17 +390,17 @@ module Main (PORTA,MEMADDR);
 			LDA : begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
 								RI			<= 0;				//RAM IN Disabled.
 								RO			<= 1;				//RAM OUT Enabled.
-								stack[STCK]	<= RAM;		//Put RAM on the Stack.
+								stack[STCK]	<= RAM;				//Put RAM on the Stack.
 							end
 						4'b0011: begin
-								RO 		<= 0; 			//RAM OUT Disabled,
-								ALU 		<= RAM;			//Load ALU  from RAM.
-								ALU[8]	<= 0;				//Clear Carry Bit.
+								RO 		<= 0; 					//RAM OUT Disabled,
+								ALU 		<= RAM;				//Load ALU  from RAM.
+								ALU[8]	<= 0;					//Clear Carry Bit.
 								SC			<= 1;				//Reset the Step Counter.
 							end
 					endcase
@@ -409,13 +409,13 @@ module Main (PORTA,MEMADDR);
 			LIA	: begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
-								RI 		<= 0; 			//RAM IN Disabled.
-								ALU 		<= RAM;			//Load X Register from RAM.
-								ALU[8] 	<= 0;				//Clear Carry Bit.
-								SC 		<= 1;				//Reset the Step Counter.
+								RI 		<= 0; 					//RAM IN Disabled.
+								ALU 		<= RAM;				//Load X Register from RAM.
+								ALU[8] 	<= 0;					//Clear Carry Bit.
+								SC 		<= 1;					//Reset the Step Counter.
 							end
 					endcase
 				end
@@ -423,23 +423,23 @@ module Main (PORTA,MEMADDR);
 			STA : begin		
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
-								RI 		<= 0; 			//RAM IN Disabled.
+								RI 		<= 0; 					//RAM IN Disabled.
 								MI			<= 1;				//Memory IN Enabled.
-								stack[STCK]	<= RAM;		//Put address on the Stack.
+								stack[STCK]	<= RAM;				//Put address on the Stack.
 								stack[STCK + 1] <= ALU;
 							end
 						4'b0011: begin
 								MI			<= 0;				//Memory IN Disabled.
-								SC 		<= 1;				//Reset the Step Counter.
+								SC 		<= 1;					//Reset the Step Counter.
 							end
 					endcase
 				end
 			//Clear ALU
 			CLA : begin
-					ALU		<= 0;							//Set ALU to 0.
+					ALU		<= 0;								//Set ALU to 0.
 					SREG[CF]	<= 0;							//Clear Carry Flag.
 					SREG[ZF]	<= 0;							//Clear Zero Flag.
 					SC			<= 1;							//Reset the Step Counter.
@@ -448,19 +448,19 @@ module Main (PORTA,MEMADDR);
 			ADX : begin
 					case(SCNT)
 						4'b0001: begin
-								ALU	<= ALU + XREG;		//Add X Register to the ALU.
+								ALU	<= ALU + XREG;				//Add X Register to the ALU.
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -469,19 +469,19 @@ module Main (PORTA,MEMADDR);
 			ADY : begin
 					case(SCNT)
 						4'b0001: begin
-								ALU	<= ALU + YREG;		//Add Y Register to the ALU.
+								ALU	<= ALU + YREG;				//Add Y Register to the ALU.
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -490,19 +490,19 @@ module Main (PORTA,MEMADDR);
 			ADZ : begin
 					case(SCNT)
 						4'b0001: begin
-								ALU	<= ALU + ZREG;		//Add Z Register to the ALU.
+								ALU	<= ALU + ZREG;				//Add Z Register to the ALU.
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -511,28 +511,28 @@ module Main (PORTA,MEMADDR);
 			ADD : begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
 								RI			<= 0;				//RAM IN Disabled.
 								RO			<= 1;				//RAM OUT Enabled.
-								stack[STCK]	<= RAM;		//Put RAM on the Stack.
+								stack[STCK]	<= RAM;				//Put RAM on the Stack.
 							end
 						4'b0011: begin
-								RO 		<= 0; 			//RAM OUT Disabled.
-								ALU 	<= ALU + RAM;		//Add RAM to the ALU.
+								RO 		<= 0; 					//RAM OUT Disabled.
+								ALU 	<= ALU + RAM;			//Add RAM to the ALU.
 							end
 						4'b0100: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -541,23 +541,23 @@ module Main (PORTA,MEMADDR);
 			ADI : begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
-								RI 		<= 0; 			//RAM IN Disabled.
-								ALU 	<= ALU + RAM;		//Add RAM to the ALU.
+								RI 		<= 0; 					//RAM IN Disabled.
+								ALU 	<= ALU + RAM;			//Add RAM to the ALU.
 							end
 						4'b0011: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 
@@ -567,19 +567,19 @@ module Main (PORTA,MEMADDR);
 			SUX: begin
 					case(SCNT)
 						4'b0001: begin
-								ALU	<= ALU - XREG;		//Subtract X Register from the ALU.
+								ALU	<= ALU - XREG;				//Subtract X Register from the ALU.
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end 
 					endcase
@@ -588,19 +588,19 @@ module Main (PORTA,MEMADDR);
 			SUY : begin
 					case(SCNT)
 						4'b0001: begin
-								ALU	<= ALU - YREG;		//Subtract Y Register from the ALU.
+								ALU	<= ALU - YREG;				//Subtract Y Register from the ALU.
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -609,19 +609,19 @@ module Main (PORTA,MEMADDR);
 			SUZ : begin
 					case(SCNT)
 						4'b0001: begin
-								ALU	<= ALU - ZREG;		//Subtract Z Register from the ALU.
+								ALU	<= ALU - ZREG;				//Subtract Z Register from the ALU.
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -630,28 +630,28 @@ module Main (PORTA,MEMADDR);
 			SUB : begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
 								RI			<= 0;				//RAM IN Disabled.
 								RO			<= 1;				//RAM OUT Enabled.
-								stack[STCK]	<= RAM;		//Put RAM on the Stack.
+								stack[STCK]	<= RAM;				//Put RAM on the Stack.
 							end
 						4'b0011: begin
-								RO 		<= 0; 			//RAM OUT Disabled.
-								ALU 	<= ALU - RAM;		//Subtract RAM from the ALU.
+								RO 		<= 0; 					//RAM OUT Disabled.
+								ALU 	<= ALU - RAM;			//Subtract RAM from the ALU.
 							end
 						4'b0100: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -660,23 +660,23 @@ module Main (PORTA,MEMADDR);
 			SUI : begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
-								RI 		<= 0; 			//RAM IN Disabled.
-								ALU 	<= ALU - RAM;		//Subtract RAM from the ALU.
+								RI 		<= 0; 					//RAM IN Disabled.
+								ALU 	<= ALU - RAM;			//Subtract RAM from the ALU.
 							end
 						4'b0011: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -685,19 +685,19 @@ module Main (PORTA,MEMADDR);
 			MUX : begin
 					case(SCNT)
 						4'b0001: begin
-								ALU	<= ALU * XREG;		//Multiply X Register with ALU.
+								ALU	<= ALU * XREG;				//Multiply X Register with ALU.
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -706,19 +706,19 @@ module Main (PORTA,MEMADDR);
 			MUY : begin
 					case(SCNT)
 						4'b0001: begin
-								ALU	<= ALU * YREG;		//Multiply Y Register with ALU.
+								ALU	<= ALU * YREG;				//Multiply Y Register with ALU.
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -727,19 +727,19 @@ module Main (PORTA,MEMADDR);
 			MUZ : begin
 					case(SCNT)
 						4'b0001: begin
-								ALU	<= ALU * ZREG;		//Multiply Z Register with ALU.
+								ALU	<= ALU * ZREG;				//Multiply Z Register with ALU.
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -748,28 +748,28 @@ module Main (PORTA,MEMADDR);
 			MUL : begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
 								RI			<= 0;				//RAM IN Disabled.
 								RO			<= 1;				//RAM OUT Enabled.
-								stack[STCK]	<= RAM;		//Put RAM on the Stack.
+								stack[STCK]	<= RAM;				//Put RAM on the Stack.
 							end
 						4'b0011: begin
-								RO 		<= 0; 			//RAM OUT Disabled.
-								ALU 		<= ALU * RAM;	//Multiply RAM with ALU.
+								RO 		<= 0; 					//RAM OUT Disabled.
+								ALU 		<= ALU * RAM;		//Multiply RAM with ALU.
 							end
 						4'b0100: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -778,23 +778,23 @@ module Main (PORTA,MEMADDR);
 			MUI : begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
-								RI 		<= 0; 			//RAM IN Disabled.
-								ALU 		<= ALU * RAM;	//Multiply RAM with ALU.
+								RI 		<= 0; 					//RAM IN Disabled.
+								ALU 		<= ALU * RAM;		//Multiply RAM with ALU.
 							end
 						4'b0011: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -803,19 +803,19 @@ module Main (PORTA,MEMADDR);
 			DIX : begin
 					case(SCNT)
 						4'b0001: begin
-								ALU	<= ALU / XREG;		//Divide ALU by X Register.
+								ALU	<= ALU / XREG;				//Divide ALU by X Register.
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -824,19 +824,19 @@ module Main (PORTA,MEMADDR);
 			DIY	: begin
 					case(SCNT)
 						4'b0001: begin
-								ALU	<= ALU / YREG;		//Divide ALU by Y Register.
+								ALU	<= ALU / YREG;				//Divide ALU by Y Register.
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -845,19 +845,19 @@ module Main (PORTA,MEMADDR);
 			DIZ : begin
 					case(SCNT)
 						4'b0001: begin
-								ALU	<= ALU / ZREG;		//Divide ALU by Z Register.
+								ALU	<= ALU / ZREG;				//Divide ALU by Z Register.
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -866,28 +866,28 @@ module Main (PORTA,MEMADDR);
 			DIV : begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
 								RI			<= 0;				//RAM IN Disabled.
 								RO			<= 1;				//RAM OUT Enabled.
-								stack[STCK]	<= RAM;		//Put RAM on the Stack.
+								stack[STCK]	<= RAM;				//Put RAM on the Stack.
 							end
 						4'b0011: begin
-								RO 		<= 0; 			//RAM OUT Disabled.
-								ALU 	<= ALU / RAM;		//Divide ALU by RAM.
+								RO 		<= 0; 					//RAM OUT Disabled.
+								ALU 	<= ALU / RAM;			//Divide ALU by RAM.
 							end
 						4'b0100: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -896,23 +896,23 @@ module Main (PORTA,MEMADDR);
 			DII : begin
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
+								RI 		<= 1; 					//RAM IN Enabled.
 							end
 						4'b0010: begin
-								RI 		<= 0; 			//RAM IN Disabled.
-								ALU 	<= ALU / RAM;		//Divide ALU by RAM.
+								RI 		<= 0; 					//RAM IN Disabled.
+								ALU 	<= ALU / RAM;			//Divide ALU by RAM.
 							end
 						4'b0011: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -921,19 +921,19 @@ module Main (PORTA,MEMADDR);
 			LSL : begin
 					case(SCNT)
 						4'b0001: begin
-								ALU <= ALU << 1;			//Shift left 1 bit.
+								ALU <= ALU << 1;				//Shift left 1 bit.
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -942,19 +942,19 @@ module Main (PORTA,MEMADDR);
 			LSR : begin
 					case(SCNT)
 						4'b0001: begin
-								ALU <= ALU >> 1;			//Shift right 1 bit.
+								ALU <= ALU >> 1;				//Shift right 1 bit.
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -967,15 +967,15 @@ module Main (PORTA,MEMADDR);
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -988,15 +988,15 @@ module Main (PORTA,MEMADDR);
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];		//Set Carry Flag.
+								SREG[CF]	<= ALU[8];			//Set Carry Flag.
 								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ALU == 0) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								else begin
-									SREG[ZF] <= 0;			//Clear Zero Flag.
+									SREG[ZF] <= 0;				//Clear Zero Flag.
 								end
 							end
 					endcase
@@ -1005,11 +1005,11 @@ module Main (PORTA,MEMADDR);
 			JMP : begin
 					case(SCNT)
 						4'b0001: begin
-								CI 		<= 1; 			//Counter IN Enabled.
+								CI 			<= 1; 				//Counter IN Enabled.
 							end
 						4'b0010: begin
-								CI 		<= 0; 			//Counter IN Disabled.
-								SC 		<= 1;				//Reset the Step Counter.
+								CI 			<= 0; 				//Counter IN Disabled.
+								SC 			<= 1;				//Reset the Step Counter.
 							end
 					endcase
 				end
@@ -1019,11 +1019,11 @@ module Main (PORTA,MEMADDR);
 					if (SREG[ZF] == 1) begin
 						case(SCNT)
 							4'b0001: begin
-									CI 		<= 1; 		//Counter IN Enabled.
+									CI 		<= 1; 				//Counter IN Enabled.
 								end
 							4'b0010: begin
-									CI 			<= 0; 	//Counter IN Disabled.
-									SC 			<= 1;		//Reset the Step Counter.
+									CI 		<= 0; 				//Counter IN Disabled.
+									SC 		<= 1;				//Reset the Step Counter.
 								end
 						endcase
 					end
@@ -1031,11 +1031,11 @@ module Main (PORTA,MEMADDR);
 					else begin
 						case(SCNT)
 							4'b0001: begin
-									IC 		<= 1; 		//Enable Increment Program Counter
+									IC 		<= 1; 				//Enable Increment Program Counter
 								end
 							4'b0010: begin
-									IC 			<= 0; 	//Disable Increment Program Counter.
-									SC 			<= 1;		//Reset the Step Counter.
+									IC 		<= 0; 				//Disable Increment Program Counter.
+									SC 		<= 1;				//Reset the Step Counter.
 								end
 						endcase						
 					end
@@ -1046,11 +1046,11 @@ module Main (PORTA,MEMADDR);
 					if (SREG[ZF] == 0) begin
 						case(SCNT)
 							4'b0001: begin
-									CI 		<= 1; 		//Counter IN Enabled.
+									CI 		<= 1; 				//Counter IN Enabled.
 								end
 							4'b0010: begin
-									CI 			<= 0; 	//Counter IN Disabled.
-									SC 			<= 1;		//Reset the Step Counter.
+									CI 		<= 0; 				//Counter IN Disabled.
+									SC 		<= 1;				//Reset the Step Counter.
 								end
 						endcase
 					end
@@ -1058,12 +1058,12 @@ module Main (PORTA,MEMADDR);
 					else begin
 						case(SCNT)
 							4'b0001: begin
-									IC 		<= 1; 		//Enable Increment Program Counter
+									IC 		<= 1; 				//Enable Increment Program Counter
 								end
 							4'b0010: begin
 
-									IC 			<= 0; 	//Disable Increment Program Counter.
-									SC 			<= 1;		//Reset the Step Counter.
+									IC 		<= 0; 				//Disable Increment Program Counter.
+									SC 		<= 1;				//Reset the Step Counter.
 								end
 						endcase						
 					end
@@ -1074,11 +1074,11 @@ module Main (PORTA,MEMADDR);
 					if (SREG[CF] == 1) begin
 						case(SCNT)
 							4'b0001: begin
-									CI 		<= 1; 		//Counter IN Enabled.
+									CI 		<= 1; 				//Counter IN Enabled.
 								end
 							4'b0010: begin
-									CI			<= 0; 		//Counter IN Disabled.
-									SC 			<= 1;		//Reset the Step Counter.
+									CI		<= 0;	 			//Counter IN Disabled.
+									SC 		<= 1;				//Reset the Step Counter.
 								end
 						endcase
 					end
@@ -1086,11 +1086,11 @@ module Main (PORTA,MEMADDR);
 					else begin
 						case(SCNT)
 							4'b0001: begin
-									IC 		<= 1; 		//Enable Increment Program Counter
+									IC 		<= 1; 				//Enable Increment Program Counter
 								end
 							4'b0010: begin
-									IC 		<= 0; 		//Disable Increment Program Counter.
-									SC 		<= 1;			//Reset the Step Counter.
+									IC 		<= 0; 				//Disable Increment Program Counter.
+									SC 		<= 1;				//Reset the Step Counter.
 								end
 						endcase						
 					end
@@ -1101,11 +1101,11 @@ module Main (PORTA,MEMADDR);
 					if (SREG[CF] == 0) begin
 						case(SCNT)
 							4'b0001: begin
-									CI 		<= 1; 		//Counter IN Enabled.
+									CI 		<= 1; 				//Counter IN Enabled.
 								end
 							4'b0010: begin
-									CI			<= 0; 		//Counter IN Disabled.
-									SC 			<= 1;		//Reset the Step Counter.
+									CI		<= 0;	 			//Counter IN Disabled.
+									SC 		<= 1;				//Reset the Step Counter.
 								end
 						endcase
 					end
@@ -1113,11 +1113,11 @@ module Main (PORTA,MEMADDR);
 					else begin
 						case(SCNT)
 							4'b0001: begin
-									IC 		<= 1; 		//Enable Increment Program Counter
+									IC 		<= 1; 				//Enable Increment Program Counter
 								end
 							4'b0010: begin
-									IC 		<= 0; 		//Disable Increment Program Counter.
-									SC 		<= 1;			//Reset the Step Counter.
+									IC 		<= 0; 				//Disable Increment Program Counter.
+									SC 		<= 1;				//Reset the Step Counter.
 								end
 						endcase						
 					end
@@ -1127,11 +1127,11 @@ module Main (PORTA,MEMADDR);
 					case(SCNT)
 						4'b0001: begin
 								RCNT	<= PCNT;				//Save current Program Counter to Return Program Counter.
-								CI 		<= 1; 			//Counter IN Enabled.
+								CI 		<= 1; 					//Counter IN Enabled.
 							end
 						4'b0010: begin
-								CI 		<= 0; 			//Counter IN Disabled.
-								SC 		<= 1;				//Reset the Step Counter.
+								CI 		<= 0; 					//Counter IN Disabled.
+								SC 		<= 1;					//Reset the Step Counter.
 							end
 					endcase
 				end
@@ -1139,17 +1139,17 @@ module Main (PORTA,MEMADDR);
 			RSR : begin
 					case(SCNT)
 						4'b0001: begin
-								RS 		<= 1; 			//Return Sub-Routine Enabled.
+								RS 		<= 1; 					//Return Sub-Routine Enabled.
 							end
 						4'b0010: begin
-								RS 		<= 0; 			//Return Sub-Routine Disabled.
-								SC 		<= 1;				//Reset the Step Counter.
+								RS 		<= 0; 					//Return Sub-Routine Disabled.
+								SC 		<= 1;					//Reset the Step Counter.
 							end
 					endcase
 				end
 			// Clear Carry Flag
 			CLC : begin
-					SREG[CF] 	<= 0;						//Clear the Carry Flag.
+					SREG[CF] 	<= 0;							//Clear the Carry Flag.
 					SC				<= 1;						//Reset the Step Counter	
 				end
 			// Transfer X Register to the ALU
@@ -1187,22 +1187,22 @@ module Main (PORTA,MEMADDR);
 			CMP : begin 
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
-								SREG[ZF] <= 0;				//Reset the Zero Flag.
-								SREG[CF] <= 0;				//Reset the Carry Flag.
+								RI 		<= 1; 					//RAM IN Enabled.
+								SREG[ZF] <= 0;					//Reset the Zero Flag.
+								SREG[CF] <= 0;					//Reset the Carry Flag.
 							end
 						4'b0010: begin
 								RI			<= 0;				//RAM IN Disabled.
 								RO			<= 1;				//RAM OUT Enabled.
-								stack[STCK]	<= RAM;		//Put RAM on the Stack.
+								stack[STCK]	<= RAM;				//Put RAM on the Stack.
 							end
 						4'b0011: begin
-								RO 		<= 0; 			//RAM OUT Disabled.
+								RO 		<= 0; 					//RAM OUT Disabled.
 								if (RAM >= ALU[7:0]) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (RAM == ALU[7:0]) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								SC			<= 1;				//Reset the Step Counter.
 							end
@@ -1212,17 +1212,17 @@ module Main (PORTA,MEMADDR);
 			CMI : begin 
 					case(SCNT)
 						4'b0001: begin
-								RI 		<= 1; 			//RAM IN Enabled.
-								SREG[ZF] <= 0;				//Reset the Zero Flag.
-								SREG[CF] <= 0;				//Reset the Carry Flag.
+								RI 		<= 1; 					//RAM IN Enabled.
+								SREG[ZF] <= 0;					//Reset the Zero Flag.
+								SREG[CF] <= 0;					//Reset the Carry Flag.
 							end
 						4'b0010: begin
-								RI 		<= 0; 			//RAM IN Disabled.
+								RI 		<= 0; 					//RAM IN Disabled.
 								if (RAM >= ALU[7:0]) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (RAM == ALU[7:0]) begin				
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								SC			<= 1;				//Reset the Step Counter.
 							end
@@ -1232,15 +1232,15 @@ module Main (PORTA,MEMADDR);
 			CPX : begin 
 					case(SCNT)
 						4'b0001: begin
-								SREG[ZF] <= 0;				//Reset the Zero Flag.
-								SREG[CF] <= 0;				//Reset the Carry Flag.
+								SREG[ZF] <= 0;					//Reset the Zero Flag.
+								SREG[CF] <= 0;					//Reset the Carry Flag.
 						    end
 						4'b0010: begin
 								if (XREG >= ALU[7:0]) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (XREG == ALU[7:0]) begin
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								SC			<= 1;				//Reset the Step Counter.
 							end
@@ -1250,15 +1250,15 @@ module Main (PORTA,MEMADDR);
 			CPY : begin
 					case(SCNT)
 						4'b0001: begin
-								SREG[ZF] <= 0;				//Reset the Zero Flag.
-								SREG[CF] <= 0;				//Reset the Carry Flag.
+								SREG[ZF] <= 0;					//Reset the Zero Flag.
+								SREG[CF] <= 0;					//Reset the Carry Flag.
 						    end
 						4'b0010: begin
 								if (YREG >= ALU[7:0]) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (YREG == ALU[7:0]) begin
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								SC			<= 1;				//Reset the Step Counter.
 							end
@@ -1268,15 +1268,15 @@ module Main (PORTA,MEMADDR);
 			CPZ : begin
 					case(SCNT)
 						4'b0001: begin
-								SREG[ZF] <= 0;				//Reset the Zero Flag.
-								SREG[CF] <= 0;				//Reset the Carry Flag.
+								SREG[ZF] <= 0;					//Reset the Zero Flag.
+								SREG[CF] <= 0;					//Reset the Carry Flag.
 						    end
 						4'b0010: begin
 								if (ZREG >= ALU[7:0]) begin
-									SREG[CF] <= 1;			//Set Carry Flag.
+									SREG[CF] <= 1;				//Set Carry Flag.
 								end
 								if (ZREG == ALU[7:0]) begin
-									SREG[ZF] <= 1;			//Set Zero Flag.
+									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
 								SC			<= 1;				//Reset the Step Counter.
 							end
@@ -1285,12 +1285,12 @@ module Main (PORTA,MEMADDR);
 			// Clear PORTA Register
 			CLO : begin
 					SC			<= 1;							//Reset the Step Counter.
-					PORTA 	<= 0;							//Clear PORTA.
+					PORTA 	<= 0;								//Clear PORTA.
 				end
 			// Output X Register to PORTA
 			OTX : begin
 					SC			<= 1;							//Reset the Step Counter.
-					PORTA 	<= XREG;						//Set PORTA equal to the X Register.
+					PORTA 	<= XREG;							//Set PORTA equal to the X Register.
 				end
 			// Output Y Register to PORTA
 			OTY : begin
@@ -1300,18 +1300,18 @@ module Main (PORTA,MEMADDR);
 			// Output Z Register to PORTA
 			OTZ : begin
 					SC			<= 1;							//Reset the Step Counter.
-					PORTA 	<= ZREG;						//Set PORTA equal to the Z Register.
+					PORTA 	<= ZREG;							//Set PORTA equal to the Z Register.
 				end
 			// Output ALU to PORTA
 			OTA : begin
 					SC			<= 1;							//Reset the Step Counter.
-					PORTA		<= ALU;						//Set PORTA equal to the ALU.
+					PORTA		<= ALU;							//Set PORTA equal to the ALU.
 				end
 			// Halt Counter
 			HLT : begin
 					SC			<= 1;							//Reset the Step Counter.
-					HC 		<= 1;							//Set the Halt Clock flag.
-					SREG[6]	<= 1;							//Update the Status Register.
+					HC 		<= 1;								//Set the Halt Clock flag.
+					SREG[6]	<= 1;								//Update the Status Register.
 				end
 			default : begin
 					SC			<= 1;							//Reset the Step Counter.
