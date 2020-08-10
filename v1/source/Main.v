@@ -1,4 +1,4 @@
-//
+ //
 //Eight-Bit Verilog Computer (EBVC)
 //
 //Copyright (c) 2020 Justin Savala
@@ -86,64 +86,69 @@ module Main (PORTA,MEMADDR);
 				CLA = 8'b00011100,	// 1C | 1 Byte | Clear ALU / CF / ZF
 				//ALU Operations
 				//Sets and clears ZF, Sets CF.
+				//Add
 				ADX = 8'b00100001,	// 21 | 1 Byte | Add X Register to the ALU
 				ADY = 8'b00100010,	// 22 | 1 Byte | Add Y Register to the ALU
 				ADZ = 8'b00100011,	// 23 | 1 Byte | Add Z Register to the ALU
 				ADD = 8'b00100100,	// 24 | 2 Byte | Add value from Memory Address to the ALU
 				ADI = 8'b00100101,	// 25 | 2 Byte | Add Immediate Value to the ALU
-				SUX = 8'b00100110,	// 26 | 1 Byte | Subtract X Register from the ALU
-				SUY = 8'b00100111,	// 27 | 1 Byte | Subtract Y Register from the ALU
-				SUZ = 8'b00101000,	// 28 | 1 Byte | Subtract Z Register from 
-				SUB = 8'b00101001,	// 29 | 2 Byte | Subtract value from Memory Address from the ALU
-				SUI = 8'b00101010,	// 2A | 2 Byte | Subtract Immediate Value from the ALU
-				MUX = 8'b00101011,	// 2B | 1 Byte | Multiply ALU by X Register
-				MUY = 8'b00101100,	// 2C | 1 Byte | Multiply ALU by X Register
-				MUZ = 8'b00101101,	// 2D | 1 Byte | Multiply ALU by Z Register
-				MUL = 8'b00101110,	// 2E | 2 Byte | Multiply ALU by value from Memory Address
-				MUI = 8'b00101111,	// 2F | 2 Byte | Multiply ALU by Immediate Value
-				DIX = 8'b00110000,	// 30 | 1 Byte | Divide ALU by X Register
-				DIY = 8'b00110001,	// 31 | 1 Byte | Divide ALU by Y Register
-				DIZ = 8'b00110010,	// 32 | 1 Byte | Divide ALU by Z Register
-				DIV = 8'b00110011,	// 33 | 2 Byte | Divide ALU by value from Memory Address
-				DII = 8'b00110100,	// 34 | 2 Byte | Divide ALU by Immediate Value
-				LSL = 8'b00110110,	// 36 | 1 Byte | Logical Shift Left  <<
-				LSR = 8'b00110111,	// 37 | 1 Byte | Logical Shift Right >>	
-				ROL = 8'b00111000,	// 38 | 1 Byte | Rotate Left
-				ROR = 8'b00111001,	// 39 | 1 Byte | Rotate Right
-				BND = 8'b00111010,	// 3A | 2 Byte | Bitwise AND	- TODO
-				NND = 8'b00111011,	// 3B | 2 Byte | Bitwise NAND	- TODO
-				BOR = 8'b00111100,	// 3C | 2 Byte | Bitwise OR	- TODO
-				NOR = 8'b00111101,	// 3D | 2 Byte | Bitwise NOR	- TODO
-				NOT = 8'b00111110,	// 3E | 1 Byte | Bitwise NOT	- TODO
+				//Subtract
+				SUX = 8'b00110110,	// 36 | 1 Byte | Subtract X Register from the ALU
+				SUY = 8'b00110111,	// 37 | 1 Byte | Subtract Y Register from the ALU
+				SUZ = 8'b00111000,	// 38 | 1 Byte | Subtract Z Register from 
+				SUB = 8'b00111001,	// 39 | 2 Byte | Subtract value from Memory Address from the ALU
+				SUI = 8'b00111010,	// 3A | 2 Byte | Subtract Immediate Value from the ALU
+				//Multiply
+				MUX = 8'b01001011,	// 4B | 1 Byte | Multiply ALU by X Register
+				MUY = 8'b01001100,	// 4C | 1 Byte | Multiply ALU by X Register
+				MUZ = 8'b01001101,	// 4D | 1 Byte | Multiply ALU by Z Register
+				MUL = 8'b01001110,	// 4E | 2 Byte | Multiply ALU by value from Memory Address
+				MUI = 8'b01001111,	// 4F | 2 Byte | Multiply ALU by Immediate Value
+				//Divide - Needs some more thinking about....
+				DIX = 8'b01010000,	// 50 | 1 Byte | Divide ALU by X Register					- TODO
+				DIY = 8'b01010001,	// 51 | 1 Byte | Divide ALU by Y Register					- TODO
+				DIZ = 8'b01010010,	// 52 | 1 Byte | Divide ALU by Z Register					- TODO
+				DIV = 8'b01010011,	// 53 | 2 Byte | Divide ALU by value from Memory Address	- TODO
+				DII = 8'b01010100,	// 54 | 2 Byte | Divide ALU by Immediate Value				- TODO
+				//Bitwise
+				LSL = 8'b01100000,	// 60 | 1 Byte | Logical Shift Left  <<
+				LSR = 8'b01100001,	// 61 | 1 Byte | Logical Shift Right >>	
+				ROL = 8'b01101001,	// 69 | 1 Byte | Rotate Left
+				ROR = 8'b01101010,	// 6A | 1 Byte | Rotate Right
+				BND = 8'b01101011,	// 6B | 2 Byte | Bitwise AND	- TODO
+				NND = 8'b01101100,	// 6C | 2 Byte | Bitwise NAND	- TODO
+				BOR = 8'b01101101,	// 6D | 2 Byte | Bitwise OR		- TODO
+				NOR = 8'b01101110,	// 6E | 2 Byte | Bitwise NOR	- TODO
+				NOT = 8'b01101111,	// 6F | 1 Byte | Bitwise NOT	- TODO
 				//Program Logic
-				JMP = 8'b01000001,	// 41 | 2 Byte | Jump to Memory Address
-				JZS = 8'b01000010,	// 42 | 2 Byte | Jump to Memory Address if Zero Flag Set
-				JZC = 8'b01000011,	// 43 | 2 Byte | Jump to Memory Address if Zero Flag Clear
-				JCS = 8'b01000100,	// 44 | 2 Byte | Jump to Memory Address if Carry Flag Set
-				JCC = 8'b01000101,	// 45 | 2 Byte | Jump to Memory Address if Carry Flag Clear
-				JSR = 8'b01000110,	// 46 | 2 Byte | Jump to Sub-Routine
-				RSR = 8'b01000111,	// 47 | 1 Byte | Return from Sub-Routine
+				JMP = 8'b10000001,	// 81 | 2 Byte | Jump to Memory Address
+				JZS = 8'b10000010,	// 82 | 2 Byte | Jump to Memory Address if Zero Flag Set
+				JZC = 8'b10000011,	// 83 | 2 Byte | Jump to Memory Address if Zero Flag Clear
+				JCS = 8'b10000100,	// 84 | 2 Byte | Jump to Memory Address if Carry Flag Set
+				JCC = 8'b10000101,	// 85 | 2 Byte | Jump to Memory Address if Carry Flag Clear
+				JSR = 8'b10000110,	// 86 | 2 Byte | Jump to Sub-Routine
+				RSR = 8'b10000111,	// 87 | 1 Byte | Return from Sub-Routine
 				//Transfer Register Values
-				TXA = 8'b01010001,	// 51 | 1 Byte | Transfer X Register to ALU
-				TAX = 8'b01010010,	// 52 | 1 Byte | Transfer ALU to X Register
-				TYA = 8'b01010011,	// 53 | 1 Byte | Transfer Y Register to ALU
-				TAY = 8'b01010100,	// 54 | 1 Byte | Transfer ALU to Y Register
-				TZA = 8'b01010101,	// 55 | 1 Byte | Transfer Z Register to ALU
-				TAZ = 8'b01010110,	// 56 | 1 Byte | Transfer ALU to Z Register
+				TXA = 8'b10100001,	// A1 | 1 Byte | Transfer X Register to ALU
+				TAX = 8'b10100010,	// A2 | 1 Byte | Transfer ALU to X Register
+				TYA = 8'b10100011,	// A3 | 1 Byte | Transfer Y Register to ALU
+				TAY = 8'b10100100,	// A4 | 1 Byte | Transfer ALU to Y Register
+				TZA = 8'b10100101,	// A5 | 1 Byte | Transfer Z Register to ALU
+				TAZ = 8'b10100110,	// A6 | 1 Byte | Transfer ALU to Z Register
 				//Comparison - Results Not Stored
 				// CF Set if Reg >= ALU | ZF Set if Reg = ALU
-				CMP = 8'b01100001,	// 61 | 2 Byte | Compare ALU with Memory Value
-				CMI = 8'b01100010,	// 62 | 2 Byte | Compare ALU with Immediate Value
-				CPX = 8'b01100011,	// 63 | 1 Byte | Compare ALU with X Register
-				CPY = 8'b01100100,	// 64 | 1 Byte | Compare ALU with Y Register
-				CPZ = 8'b01100101,	// 65 | 1 Byte | Compare ALU with Z Register
-				CLC = 8'b01100110,	// 66 | 1 Byte | Clear Carry Flag
+				CMP = 8'b11000001,	// C1 | 2 Byte | Compare ALU with Memory Value
+				CMI = 8'b11000010,	// C2 | 2 Byte | Compare ALU with Immediate Value
+				CPX = 8'b11000011,	// C3 | 1 Byte | Compare ALU with X Register
+				CPY = 8'b11000100,	// C4 | 1 Byte | Compare ALU with Y Register
+				CPZ = 8'b11000101,	// C5 | 1 Byte | Compare ALU with Z Register
+				CLC = 8'b11000110,	// C6 | 1 Byte | Clear Carry Flag
 				//Output Register
-				CLO = 8'b10000001,	// 81 | 1 Byte | Clear PORTA Register
-				OTX = 8'b10000010,	// 82 | 1 Byte | Output X Register to PORTA			
-				OTY = 8'b10000011,	// 83 | 1 Byte | Output Y Register to PORTA		
-				OTZ = 8'b10000100,	// 84 | 1 Byte | Output Z Register to PORTA
-				OTA = 8'b10000101,	// 85 | 1 Byte | Output ALU to PORTA
+				CLO = 8'b11111001,	// F9 | 1 Byte | Clear PORTA Register
+				OTX = 8'b11111010,	// FA | 1 Byte | Output X Register to PORTA			
+				OTY = 8'b11111011,	// FB | 1 Byte | Output Y Register to PORTA		
+				OTZ = 8'b11111100,	// FC | 1 Byte | Output Z Register to PORTA
+				OTA = 8'b11111101,	// FD | 1 Byte | Output ALU to PORTA
 				//Halt
 				HLT = 8'b11111111,	// FF | 1 Byte | Halt Counter
 				CF  = 1'b1,			// Carry Flag
@@ -193,7 +198,7 @@ module Main (PORTA,MEMADDR);
 			//Set Program Counter to value from memory.
 			else if (CI) begin
 				PCNT	<= memory[PCNT];	// Set Program Counter to Memory value.
-				SCNT  <= SCNT + 1;		// Increment the Step Counter.
+				SCNT  	<= SCNT + 1;		// Increment the Step Counter.
 			end
 			//Set Program Counter to Return Program Counter.
 			else if (RS) begin
@@ -348,7 +353,7 @@ module Main (PORTA,MEMADDR);
 							end
 						4'b0010: begin
 								RI 		<= 0; 					//RAM IN Disabled.
-								ZREG 		<= RAM;				//Load Z Register from RAM.
+								ZREG 	<= RAM;					//Load Z Register from RAM.
 								SC 		<= 1;					//Reset the Step Counter.
 							end
 					endcase
@@ -783,124 +788,6 @@ module Main (PORTA,MEMADDR);
 						4'b0010: begin
 								RI 		<= 0; 					//RAM IN Disabled.
 								ALU 		<= ALU * RAM;		//Multiply RAM with ALU.
-							end
-						4'b0011: begin
-								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
-								if (ALU == 0) begin				
-									SREG[ZF] <= 1;				//Set Zero Flag.
-								end
-								else begin
-									SREG[ZF] <= 0;				//Clear Zero Flag.
-								end
-							end
-					endcase
-				end
-			//	Divide ALU by X Register
-			DIX : begin
-					case(SCNT)
-						4'b0001: begin
-								ALU	<= ALU / XREG;				//Divide ALU by X Register.
-							end
-						4'b0010: begin
-								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
-								if (ALU == 0) begin				
-									SREG[ZF] <= 1;				//Set Zero Flag.
-								end
-								else begin
-									SREG[ZF] <= 0;				//Clear Zero Flag.
-								end
-							end
-					endcase
-				end
-			//	Divide ALU by Y Register
-			DIY	: begin
-					case(SCNT)
-						4'b0001: begin
-								ALU	<= ALU / YREG;				//Divide ALU by Y Register.
-							end
-						4'b0010: begin
-								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
-								if (ALU == 0) begin				
-									SREG[ZF] <= 1;				//Set Zero Flag.
-								end
-								else begin
-									SREG[ZF] <= 0;				//Clear Zero Flag.
-								end
-							end
-					endcase
-				end
-			// 	Divide ALU by Z Register
-			DIZ : begin
-					case(SCNT)
-						4'b0001: begin
-								ALU	<= ALU / ZREG;				//Divide ALU by Z Register.
-							end
-						4'b0010: begin
-								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
-								if (ALU == 0) begin				
-									SREG[ZF] <= 1;				//Set Zero Flag.
-								end
-								else begin
-									SREG[ZF] <= 0;				//Clear Zero Flag.
-								end
-							end
-					endcase
-				end
-			//	Divide ALU by value from Memory Address
-			DIV : begin
-					case(SCNT)
-						4'b0001: begin
-								RI 		<= 1; 					//RAM IN Enabled.
-							end
-						4'b0010: begin
-								RI			<= 0;				//RAM IN Disabled.
-								RO			<= 1;				//RAM OUT Enabled.
-								stack[STCK]	<= RAM;				//Put RAM on the Stack.
-							end
-						4'b0011: begin
-								RO 		<= 0; 					//RAM OUT Disabled.
-								ALU 	<= ALU / RAM;			//Divide ALU by RAM.
-							end
-						4'b0100: begin
-								SC			<= 1;				//Reset the Step Counter.
-								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
-								if (ALU == 0) begin				
-									SREG[ZF] <= 1;				//Set Zero Flag.
-								end
-								else begin
-									SREG[ZF] <= 0;				//Clear Zero Flag.
-								end
-							end
-					endcase
-				end
-			//	Divide ALU by Immediate Value
-			DII : begin
-					case(SCNT)
-						4'b0001: begin
-								RI 		<= 1; 					//RAM IN Enabled.
-							end
-						4'b0010: begin
-								RI 		<= 0; 					//RAM IN Disabled.
-								ALU 	<= ALU / RAM;			//Divide ALU by RAM.
 							end
 						4'b0011: begin
 								SC			<= 1;				//Reset the Step Counter.

@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Jul 12 11:06:06 2020
+Mon Aug 10 17:59:50 2020
 
 
 Command Line:  synthesis -f EBVC_v1_lattice.synproj -gui -msgset C:/Users/Justin/OneDrive/Projects/EBVC/promote.xml 
@@ -85,24 +85,24 @@ Top module name (Verilog): Main
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(24): " arg1="Main" arg2="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg3="24"  />
     <postMsg mid="35901220" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(36): " arg1="STCK" arg2="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg3="36"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): " arg1="OSCH" arg2="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1793"  />
-    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(157): " arg1="counter" arg2="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg3="157"  />
-    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(158): " arg1="SREG" arg2="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg3="158"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(163): " arg1="32" arg2="21" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="163"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(174): " arg1="32" arg2="8" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="174"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(180): " arg1="32" arg2="8" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="180"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(181): " arg1="32" arg2="3" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="181"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(186): " arg1="32" arg2="3" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="186"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(167): " arg1="counter" arg2="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg3="167"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(168): " arg1="SREG" arg2="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg3="168"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(173): " arg1="32" arg2="21" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="173"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(184): " arg1="32" arg2="8" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="184"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(190): " arg1="32" arg2="8" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="190"  />
     <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(191): " arg1="32" arg2="3" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="191"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(195): " arg1="32" arg2="8" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="195"  />
     <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(196): " arg1="32" arg2="3" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="196"  />
     <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(201): " arg1="32" arg2="3" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="201"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(204): " arg1="32" arg2="8" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="204"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(205): " arg1="32" arg2="3" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="205"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(209): " arg1="32" arg2="3" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="209"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(372): " arg1="32" arg2="8" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="372"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(377): " arg1="32" arg2="8" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="377"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(427): " arg1="9" arg2="8" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="427"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(1067): " arg1="9" arg2="8" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="1067"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(205): " arg1="32" arg2="8" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="205"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(206): " arg1="32" arg2="3" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="206"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(211): " arg1="32" arg2="3" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="211"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(214): " arg1="32" arg2="8" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="214"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(215): " arg1="32" arg2="3" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="215"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(219): " arg1="32" arg2="3" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="219"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(382): " arg1="32" arg2="8" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="382"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(387): " arg1="32" arg2="8" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="387"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(437): " arg1="9" arg2="8" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="437"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(1195): " arg1="9" arg2="8" arg3="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg4="1195"  />
 Last elaborated design is Main()
 Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -111,7 +111,7 @@ Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/or5g00/data/orc5glib.ngl'.
 Loading device for application map from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.11_x64/ispfpga.
 Package Status:                     Preliminary    Version 1.42.
 Top-level module name = Main.
-    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="n1847"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="n2060"  />
     <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="MEMADDR[5]"  />
 ######## Missing driver on net MEMADDR[5]. Patching with GND.
 
@@ -123,6 +123,156 @@ Top-level module name = Main.
 
 ######## Mapping RTL RAM memory_d0 to 1 EBR blocks in TRUE_DUAL_PORT Mode
 
+SCUBA, Version Diamond (64-bit) 3.11.0.396.4
+Mon Aug 10 17:59:51 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+BEGIN SCUBA Module Synthesis
+
+    Issued command   : c:/lscc/diamond/3.11_x64/ispfpga/bin/nt64/scuba.exe -w -n mult_9u_8u -lang verilog -bb -arch xo2c00 -type dspmult -pfu_mult -widtha 9 -widthb 8 -widthp 17 -pl_stages 0 
+    Circuit name     : mult_9u_8u
+    Module type      : dspmult
+    Module Version   : 4.2
+    Ports            : 
+	Inputs       : A[8:0], B[7:0]
+	Outputs      : P[16:0]
+    I/O buffer       : not inserted
+    EDIF output      : mult_9u_8u.edn
+    Verilog output   : mult_9u_8u.v
+    Verilog template : mult_9u_8u_tmpl.v
+    Verilog testbench: tb_mult_9u_8u_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : mult_9u_8u.srp
+    Estimated Resource Usage:
+            LUT : 92
+
+END   SCUBA Module Synthesis
+Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file mult_9u_8u.v. VERI-1482
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(693): " arg1="a[8]" arg2="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg3="693"  />
+SCUBA, Version Diamond (64-bit) 3.11.0.396.4
+Mon Aug 10 17:59:52 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+BEGIN SCUBA Module Synthesis
+
+    Issued command   : c:/lscc/diamond/3.11_x64/ispfpga/bin/nt64/scuba.exe -w -n mult_9u_8u -lang verilog -bb -arch xo2c00 -type dspmult -pfu_mult -widtha 9 -widthb 8 -widthp 17 -pl_stages 0 
+    Circuit name     : mult_9u_8u
+    Module type      : dspmult
+    Module Version   : 4.2
+    Ports            : 
+	Inputs       : A[8:0], B[7:0]
+	Outputs      : P[16:0]
+    I/O buffer       : not inserted
+    EDIF output      : mult_9u_8u.edn
+    Verilog output   : mult_9u_8u.v
+    Verilog template : mult_9u_8u_tmpl.v
+    Verilog testbench: tb_mult_9u_8u_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : mult_9u_8u.srp
+    Estimated Resource Usage:
+            LUT : 92
+
+END   SCUBA Module Synthesis
+Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file mult_9u_8u.v. VERI-1482
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): " arg1="VHI" arg2="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1120"  />
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): " arg1="AND2" arg2="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="43"  />
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): " arg1="FADD2B" arg2="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="138"  />
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): " arg1="MULT2" arg2="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="684"  />
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): " arg1="VLO" arg2="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1124"  />
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="mult_9u_8u.v(8): " arg1="mult_9u_8u" arg2="mult_9u_8u.v" arg3="8"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(714): " arg1="a[8]" arg2="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg3="714"  />
+SCUBA, Version Diamond (64-bit) 3.11.0.396.4
+Mon Aug 10 17:59:52 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+BEGIN SCUBA Module Synthesis
+
+    Issued command   : c:/lscc/diamond/3.11_x64/ispfpga/bin/nt64/scuba.exe -w -n mult_9u_8u -lang verilog -bb -arch xo2c00 -type dspmult -pfu_mult -widtha 9 -widthb 8 -widthp 17 -pl_stages 0 
+    Circuit name     : mult_9u_8u
+    Module type      : dspmult
+    Module Version   : 4.2
+    Ports            : 
+	Inputs       : A[8:0], B[7:0]
+	Outputs      : P[16:0]
+    I/O buffer       : not inserted
+    EDIF output      : mult_9u_8u.edn
+    Verilog output   : mult_9u_8u.v
+    Verilog template : mult_9u_8u_tmpl.v
+    Verilog testbench: tb_mult_9u_8u_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : mult_9u_8u.srp
+    Estimated Resource Usage:
+            LUT : 92
+
+END   SCUBA Module Synthesis
+Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file mult_9u_8u.v. VERI-1482
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): " arg1="VHI" arg2="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1120"  />
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): " arg1="AND2" arg2="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="43"  />
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): " arg1="FADD2B" arg2="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="138"  />
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): " arg1="MULT2" arg2="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="684"  />
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): " arg1="VLO" arg2="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1124"  />
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="mult_9u_8u.v(8): " arg1="mult_9u_8u" arg2="mult_9u_8u.v" arg3="8"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(735): " arg1="a[8]" arg2="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg3="735"  />
+SCUBA, Version Diamond (64-bit) 3.11.0.396.4
+Mon Aug 10 17:59:52 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+BEGIN SCUBA Module Synthesis
+
+    Issued command   : c:/lscc/diamond/3.11_x64/ispfpga/bin/nt64/scuba.exe -w -n mult_9u_8u -lang verilog -bb -arch xo2c00 -type dspmult -pfu_mult -widtha 9 -widthb 8 -widthp 17 -pl_stages 0 
+    Circuit name     : mult_9u_8u
+    Module type      : dspmult
+    Module Version   : 4.2
+    Ports            : 
+	Inputs       : A[8:0], B[7:0]
+	Outputs      : P[16:0]
+    I/O buffer       : not inserted
+    EDIF output      : mult_9u_8u.edn
+    Verilog output   : mult_9u_8u.v
+    Verilog template : mult_9u_8u_tmpl.v
+    Verilog testbench: tb_mult_9u_8u_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : mult_9u_8u.srp
+    Estimated Resource Usage:
+            LUT : 92
+
+END   SCUBA Module Synthesis
+Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file mult_9u_8u.v. VERI-1482
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): " arg1="VHI" arg2="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1120"  />
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): " arg1="AND2" arg2="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="43"  />
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): " arg1="FADD2B" arg2="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="138"  />
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): " arg1="MULT2" arg2="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="684"  />
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): " arg1="VLO" arg2="C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1124"  />
+    <postMsg mid="35901108" type="Info"    dynamic="2" navigation="2" arg0="mult_9u_8u.v(8): " arg1="mult_9u_8u" arg2="mult_9u_8u.v" arg3="8"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(765): " arg1="a[8]" arg2="c:/users/justin/onedrive/projects/ebvc/v1/source/main.v" arg3="765"  />
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 Applying 200.000000 MHz constraint to all clocks
 
@@ -139,24 +289,28 @@ Running DRC...
 DRC complete with no errors or warnings
 
 Design Results:
-    872 blocks expanded
+    963 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file EBVC_v1.ngd.
 
 ################### Begin Area Report (Main)######################
-Number of register bits => 148 of 1346 (10 % )
-CCU2D => 46
+Number of register bits => 149 of 1346 (11 % )
+AND2 => 16
+CCU2D => 58
 DP8KC => 2
-FD1P3AX => 98
-FD1S3AX => 50
+FADD2B => 52
+FD1P3AX => 97
+FD1S3AX => 52
 GSR => 1
 INV => 1
 L6MUX21 => 8
-LUT4 => 573
+LUT4 => 559
+MULT2 => 40
 OB => 16
 OSCH => 1
-PFUMX => 73
+PFUMX => 56
+ROM256X1A => 1
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -166,33 +320,33 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 2
-  Net : MEMADDR_c_12, loads : 67
+  Net : MEMADDR_c_12, loads : 68
   Net : clk, loads : 13
 Clock Enable Nets
-Number of Clock Enables: 21
+Number of Clock Enables: 19
 Top 10 highest fanout Clock Enables:
-  Net : MEMADDR_c_12_enable_24, loads : 12
-  Net : MEMADDR_c_12_enable_26, loads : 11
-  Net : counter_12__N_25_enable_44, loads : 9
-  Net : counter_12__N_25_enable_20, loads : 8
+  Net : MEMADDR_c_12_enable_23, loads : 12
+  Net : MEMADDR_c_12_enable_20, loads : 12
+  Net : counter_12__N_25_enable_41, loads : 9
+  Net : counter_12__N_25_enable_13, loads : 8
+  Net : counter_12__N_25_enable_21, loads : 8
+  Net : counter_12__N_25_enable_66, loads : 8
+  Net : counter_12__N_25_enable_65, loads : 8
   Net : counter_12__N_25_enable_58, loads : 8
-  Net : counter_12__N_25_enable_28, loads : 8
-  Net : counter_12__N_25_enable_51, loads : 8
-  Net : counter_12__N_25_enable_12, loads : 8
-  Net : counter_12__N_25_enable_35, loads : 8
-  Net : counter_12__N_25_enable_73, loads : 8
+  Net : counter_12__N_25_enable_30, loads : 8
+  Net : counter_12__N_25_enable_49, loads : 8
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : IREG_1, loads : 145
-  Net : IREG_2, loads : 137
-  Net : IREG_0, loads : 97
-  Net : IREG_6, loads : 78
+  Net : IREG_1, loads : 113
+  Net : IREG_2, loads : 94
+  Net : IREG_0, loads : 77
   Net : counter_12__N_25, loads : 75
-  Net : IREG_3, loads : 65
-  Net : IREG_5, loads : 61
-  Net : IREG_4, loads : 59
-  Net : IREG_7, loads : 49
-  Net : SCNT_0, loads : 42
+  Net : SCNT_0, loads : 57
+  Net : IREG_4, loads : 53
+  Net : ALU_1, loads : 49
+  Net : ALU_0, loads : 48
+  Net : IREG_6, loads : 45
+  Net : IREG_5, loads : 45
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -205,7 +359,7 @@ create_clock -period 5.000000 -name     |             |             |
 clk1 [get_nets clk]                     |  200.000 MHz|  207.641 MHz|     8  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets MEMADDR_c_12]            |  200.000 MHz|   27.579 MHz|    12 *
+clk0 [get_nets MEMADDR_c_12]            |  200.000 MHz|   24.176 MHz|    12 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -213,10 +367,10 @@ clk0 [get_nets MEMADDR_c_12]            |  200.000 MHz|   27.579 MHz|    12 *
 1 constraints not met.
 
 
-Peak Memory Usage: 78.031  MB
+Peak Memory Usage: 83.320  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 2.844  secs
+Elapsed CPU time for LSE flow : 2.828  secs
 --------------------------------------------------------------
 
 map -a "MachXO2" -p LCMXO2-1200HC -t QFN32 -s 4 -oc Commercial   "EBVC_v1.ngd" -o "EBVC_v1_map.ncd" -pr "EBVC_v1.prf" -mp "EBVC_v1.mrp" -lpf "C:/Users/Justin/OneDrive/Projects/EBVC/v1/EBVC_v1.lpf" -lpf "C:/Users/Justin/OneDrive/Projects/EBVC/EBVC.lpf" -c 0           
@@ -253,17 +407,17 @@ Optimizing...
 
 
 Design Summary:
-   Number of registers:    148 out of  1346 (11%)
-      PFU registers:          148 out of  1280 (12%)
+   Number of registers:    149 out of  1346 (11%)
+      PFU registers:          149 out of  1280 (12%)
       PIO registers:            0 out of    66 (0%)
-   Number of SLICEs:       334 out of   640 (52%)
-      SLICEs as Logic/ROM:    334 out of   640 (52%)
+   Number of SLICEs:       444 out of   640 (69%)
+      SLICEs as Logic/ROM:    444 out of   640 (69%)
       SLICEs as RAM:            0 out of   480 (0%)
-      SLICEs as Carry:         46 out of   640 (7%)
-   Number of LUT4s:        666 out of  1280 (52%)
-      Number used as logic LUTs:        574
+      SLICEs as Carry:        150 out of   640 (23%)
+   Number of LUT4s:        886 out of  1280 (69%)
+      Number used as logic LUTs:        586
       Number used as distributed RAM:     0
-      Number used as ripple logic:       92
+      Number used as ripple logic:      300
       Number used as shift registers:     0
    Number of PIO sites used: 16 + 4(JTAG) out of 22 (91%)
    Number of block RAMs:  2 out of 7 (29%)
@@ -289,43 +443,41 @@ Design Summary:
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
    Number of clocks:  2
-     Net MEMADDR_c_12: 87 loads, 36 rising, 51 falling (Driver: counter_3910_3955__i12 )
+     Net MEMADDR_c_12: 91 loads, 36 rising, 55 falling (Driver: counter_4855_4902__i12 )
      Net clk: 7 loads, 7 rising, 0 falling (Driver: internal_oscillator_inst )
-   Number of Clock Enables:  21
-     Net counter_12__N_25_enable_12: 4 loads, 4 LSLICEs
+   Number of Clock Enables:  19
+     Net counter_12__N_25_enable_13: 4 loads, 4 LSLICEs
+     Net MEMADDR_c_12_enable_20: 6 loads, 6 LSLICEs
+     Net counter_12__N_25_enable_65: 4 loads, 4 LSLICEs
      Net counter_12__N_25_enable_58: 4 loads, 4 LSLICEs
-     Net counter_12__N_25_enable_51: 4 loads, 4 LSLICEs
-     Net MEMADDR_c_12_enable_26: 6 loads, 6 LSLICEs
-     Net MEMADDR_c_12_enable_24: 6 loads, 5 LSLICEs
-     Net counter_12__N_25_enable_44: 5 loads, 5 LSLICEs
-     Net counter_12__N_25_enable_35: 4 loads, 4 LSLICEs
-     Net counter_12__N_25_enable_20: 8 loads, 8 LSLICEs
-     Net counter_12__N_25_enable_28: 8 loads, 8 LSLICEs
-     Net counter_12__N_25_enable_73: 4 loads, 4 LSLICEs
-     Net counter_12__N_25_enable_64: 1 loads, 1 LSLICEs
-     Net MEMADDR_c_6: 2 loads, 2 LSLICEs
-     Net MEMADDR_c_12_enable_25: 1 loads, 0 LSLICEs
-     Net counter_12__N_25_enable_37: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_49: 4 loads, 4 LSLICEs
+     Net counter_12__N_25_enable_41: 9 loads, 9 LSLICEs
+     Net counter_12__N_25_enable_30: 4 loads, 4 LSLICEs
+     Net counter_12__N_25_enable_21: 8 loads, 8 LSLICEs
+     Net counter_12__N_25_enable_66: 8 loads, 8 LSLICEs
+     Net MEMADDR_c_12_enable_23: 6 loads, 5 LSLICEs
+     Net counter_12__N_25_enable_68: 1 loads, 1 LSLICEs
      Net MEMADDR_6__N_23: 1 loads, 1 LSLICEs
-     Net counter_12__N_25_enable_59: 1 loads, 1 LSLICEs
-     Net counter_12__N_25_enable_60: 1 loads, 1 LSLICEs
-     Net counter_12__N_25_enable_61: 1 loads, 1 LSLICEs
-     Net counter_12__N_25_enable_62: 1 loads, 1 LSLICEs
-     Net counter_12__N_25_enable_63: 1 loads, 1 LSLICEs
-     Net counter_12__N_25_enable_72: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_69: 1 loads, 1 LSLICEs
+     Net MEMADDR_c_6: 2 loads, 2 LSLICEs
+     Net MEMADDR_c_12_enable_24: 1 loads, 0 LSLICEs
+     Net counter_12__N_25_enable_52: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_71: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_67: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_70: 1 loads, 1 LSLICEs
    Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net IREG_1: 145 loads
-     Net IREG_2: 137 loads
-     Net IREG_0: 97 loads
-     Net IREG_6: 77 loads
-     Net IREG_3: 65 loads
-     Net IREG_5: 60 loads
-     Net IREG_4: 58 loads
-     Net IREG_7: 49 loads
-     Net SCNT_0: 42 loads
-     Net n15196: 25 loads
+     Net IREG_1: 122 loads
+     Net IREG_2: 98 loads
+     Net IREG_0: 82 loads
+     Net IREG_4: 62 loads
+     Net SCNT_0: 57 loads
+     Net IREG_5: 56 loads
+     Net IREG_6: 56 loads
+     Net ALU_1: 49 loads
+     Net ALU_0: 47 loads
+     Net ALU_2: 45 loads
  
 
    Number of warnings:  0
@@ -335,7 +487,7 @@ Design Summary:
 
 Total CPU Time: 0 secs  
 Total REAL Time: 0 secs  
-Peak Memory Usage: 43 MB
+Peak Memory Usage: 44 MB
 
 Dumping design to file EBVC_v1_map.ncd.
 
@@ -350,7 +502,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "EBVC_v1_map.ncd"
-Sun Jul 12 11:06:11 2020
+Mon Aug 10 17:59:56 2020
 
 PAR: Place And Route Diamond (64-bit) 3.11.0.396.4.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/Justin/OneDrive/Projects/EBVC/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF EBVC_v1_map.ncd EBVC_v1.dir/5_1.ncd EBVC_v1.prf
@@ -377,21 +529,21 @@ Device utilization summary:
    PIO (prelim)   16+4(JTAG)/108     19% used
                   16+4(JTAG)/22      91% bonded
 
-   SLICE            334/640          52% used
+   SLICE            444/640          69% used
 
    OSC                1/1           100% used
    EBR                2/7            28% used
 
 
 INFO: Design contains pre-loadable EBR during configuration that has a requirement: Since the GSR is disabled for the EBR, make sure write enable and chip enable are inactive during wake-up, so that the pre-loaded initialization values will not be corrupted during wake-up state.
-Number of Signals: 790
-Number of Connections: 2735
+Number of Signals: 1049
+Number of Connections: 3368
 
 Pin Constraint Summary:
    16 out of 16 pins locked (100% locked).
 
 The following 1 signal is selected to use the primary clock routing resources:
-    MEMADDR_c_12 (driver: SLICE_9, clk load #: 87)
+    MEMADDR_c_12 (driver: SLICE_28, clk load #: 91)
 
 
 The following 1 signal is selected to use the secondary clock routing resources:
@@ -399,18 +551,18 @@ The following 1 signal is selected to use the secondary clock routing resources:
 
 No signal is selected as Global Set/Reset.
 Starting Placer Phase 0.
-..........
+.........
 Finished Placer Phase 0.  REAL time: 0 secs 
 
 Starting Placer Phase 1.
-....................
-Placer score = 150870.
-Finished Placer Phase 1.  REAL time: 7 secs 
+.....................
+Placer score = 199669.
+Finished Placer Phase 1.  REAL time: 13 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  147819
-Finished Placer Phase 2.  REAL time: 8 secs 
+Placer score =  198792
+Finished Placer Phase 2.  REAL time: 14 secs 
 
 
 ------------------ Clock Report ------------------
@@ -422,7 +574,7 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Global Clocks:
-  PRIMARY "MEMADDR_c_12" from Q1 on comp "SLICE_9" on site "R2C13C", clk load = 87
+  PRIMARY "MEMADDR_c_12" from Q1 on comp "SLICE_28" on site "R2C13C", clk load = 91
   SECONDARY "clk" from OSC on comp "internal_oscillator_inst" on site "OSC", clk load = 7, ce load = 0, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
@@ -450,16 +602,16 @@ I/O Bank Usage Summary:
 | 3        | 2 / 2 (100%) | 2.5V       | -         |
 +----------+--------------+------------+-----------+
 
-Total placer CPU time: 7 secs 
+Total placer CPU time: 13 secs 
 
 Dumping design to file EBVC_v1.dir/5_1.ncd.
 
-0 connections routed; 2735 unrouted.
+0 connections routed; 3368 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 8 secs 
+Completed router resource preassignment. Real time: 15 secs 
 
-Start NBR router at 11:06:19 07/12/20
+Start NBR router at 18:00:11 08/10/20
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -474,38 +626,41 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 11:06:19 07/12/20
+Start NBR special constraint process at 18:00:11 08/10/20
 
-Start NBR section for initial routing at 11:06:20 07/12/20
+Start NBR section for initial routing at 18:00:11 08/10/20
 Level 4, iteration 1
-78(0.09%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 477.153ns/0.000ns; real time: 9 secs 
+81(0.10%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 477.153ns/0.000ns; real time: 16 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 11:06:20 07/12/20
+Start NBR section for normal routing at 18:00:12 08/10/20
 Level 4, iteration 1
-33(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 477.153ns/0.000ns; real time: 9 secs 
+38(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 477.153ns/0.000ns; real time: 16 secs 
 Level 4, iteration 2
-9(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 477.153ns/0.000ns; real time: 9 secs 
+10(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 477.153ns/0.000ns; real time: 16 secs 
 Level 4, iteration 3
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 477.153ns/0.000ns; real time: 9 secs 
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 477.153ns/0.000ns; real time: 16 secs 
 Level 4, iteration 4
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 477.153ns/0.000ns; real time: 16 secs 
+Level 4, iteration 5
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 477.153ns/0.000ns; real time: 9 secs 
+Estimated worst slack/total negative slack<setup>: 477.153ns/0.000ns; real time: 16 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 11:06:20 07/12/20
+Start NBR section for setup/hold timing optimization with effort level 3 at 18:00:12 08/10/20
 
-Start NBR section for re-routing at 11:06:21 07/12/20
+Start NBR section for re-routing at 18:00:12 08/10/20
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 477.153ns/0.000ns; real time: 10 secs 
+Estimated worst slack/total negative slack<setup>: 477.153ns/0.000ns; real time: 16 secs 
 
-Start NBR section for post-routing at 11:06:21 07/12/20
+Start NBR section for post-routing at 18:00:12 08/10/20
 
 End NBR router with 0 unrouted connection
 
@@ -520,10 +675,10 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 
-Total CPU time 10 secs 
-Total REAL time: 10 secs 
+Total CPU time 16 secs 
+Total REAL time: 17 secs 
 Completely routed.
-End of route.  2735 routed (100.00%); 0 unrouted.
+End of route.  3368 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -540,8 +695,8 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.377
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 10 secs 
-Total REAL time to completion: 11 secs 
+Total CPU  time to completion: 17 secs 
+Total REAL time to completion: 17 secs 
 
 par done!
 
@@ -578,7 +733,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.11.0.396.4
-Sun Jul 12 11:06:22 2020
+Mon Aug 10 18:00:14 2020
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -603,11 +758,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 91 paths, 1 nets, and 2735 connections (100.00% coverage)
+Constraints cover 91 paths, 1 nets, and 3368 connections (100.00% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.11.0.396.4
-Sun Jul 12 11:06:22 2020
+Mon Aug 10 18:00:14 2020
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -632,7 +787,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 91 paths, 1 nets, and 2735 connections (100.00% coverage)
+Constraints cover 91 paths, 1 nets, and 3368 connections (100.00% coverage)
 
 
 
@@ -648,7 +803,7 @@ Cumulative negative slack: 0 (0+0)
 
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 49 MB
+Peak Memory Usage: 50 MB
 
 
 tmcheck -par "EBVC_v1.par" 
@@ -739,4 +894,4 @@ Initialized UFM Pages:                     0 Page.
  
 Total CPU Time: 3 secs 
 Total REAL Time: 3 secs 
-Peak Memory Usage: 255 MB
+Peak Memory Usage: 256 MB

@@ -2,7 +2,7 @@
 <BaliProject version="3.2" title="EBVC" device="LCMXO2-1200HC-4SG32C" default_implementation="v1">
     <Options/>
     <Implementation title="v1" dir="v1" description="v1" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="Main"/>
+        <Options/>
         <Source name="v1/source/Main.v" type="Verilog" type_short="Verilog">
             <Options top_module="Main"/>
         </Source>

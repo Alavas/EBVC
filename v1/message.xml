@@ -36,63 +36,45 @@
         <Message>
             <ID>35901221</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(157): </Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(167): </Dynamic>
             <Dynamic>counter</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>157</Navigation>
+            <Navigation>167</Navigation>
         </Message>
         <Message>
             <ID>35901221</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(158): </Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(168): </Dynamic>
             <Dynamic>SREG</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>158</Navigation>
+            <Navigation>168</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(163): </Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(173): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>21</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>163</Navigation>
+            <Navigation>173</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(174): </Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(184): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>8</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>174</Navigation>
+            <Navigation>184</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(180): </Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(190): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>8</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>180</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(181): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>3</Dynamic>
-            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>181</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(186): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>3</Dynamic>
-            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>186</Navigation>
+            <Navigation>190</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
@@ -102,15 +84,6 @@
             <Dynamic>3</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
             <Navigation>191</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(195): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>8</Dynamic>
-            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>195</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
@@ -133,75 +106,278 @@
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(204): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>8</Dynamic>
-            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>204</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
             <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(205): </Dynamic>
             <Dynamic>32</Dynamic>
-            <Dynamic>3</Dynamic>
+            <Dynamic>8</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
             <Navigation>205</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(209): </Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(206): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>3</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>209</Navigation>
+            <Navigation>206</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(372): </Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(211): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>211</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(214): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>8</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>372</Navigation>
+            <Navigation>214</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(377): </Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(215): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>215</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(219): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>219</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(382): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>8</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>377</Navigation>
+            <Navigation>382</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(427): </Dynamic>
-            <Dynamic>9</Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(387): </Dynamic>
+            <Dynamic>32</Dynamic>
             <Dynamic>8</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>427</Navigation>
+            <Navigation>387</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(1067): </Dynamic>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(437): </Dynamic>
             <Dynamic>9</Dynamic>
             <Dynamic>8</Dynamic>
             <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
-            <Navigation>1067</Navigation>
+            <Navigation>437</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(1195): </Dynamic>
+            <Dynamic>9</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>1195</Navigation>
         </Message>
         <Message>
             <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>n1847</Dynamic>
+            <Dynamic>n2060</Dynamic>
         </Message>
         <Message>
             <ID>35002005</ID>
             <Severity>Warning</Severity>
             <Dynamic>MEMADDR[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(693): </Dynamic>
+            <Dynamic>a[8]</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>693</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1120</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): </Dynamic>
+            <Dynamic>AND2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>43</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): </Dynamic>
+            <Dynamic>FADD2B</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>138</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): </Dynamic>
+            <Dynamic>MULT2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>684</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>mult_9u_8u.v(8): </Dynamic>
+            <Dynamic>mult_9u_8u</Dynamic>
+            <Navigation>mult_9u_8u.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(714): </Dynamic>
+            <Dynamic>a[8]</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>714</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1120</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): </Dynamic>
+            <Dynamic>AND2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>43</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): </Dynamic>
+            <Dynamic>FADD2B</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>138</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): </Dynamic>
+            <Dynamic>MULT2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>684</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>mult_9u_8u.v(8): </Dynamic>
+            <Dynamic>mult_9u_8u</Dynamic>
+            <Navigation>mult_9u_8u.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(735): </Dynamic>
+            <Dynamic>a[8]</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>735</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1120</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): </Dynamic>
+            <Dynamic>AND2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>43</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): </Dynamic>
+            <Dynamic>FADD2B</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>138</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): </Dynamic>
+            <Dynamic>MULT2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>684</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>mult_9u_8u.v(8): </Dynamic>
+            <Dynamic>mult_9u_8u</Dynamic>
+            <Navigation>mult_9u_8u.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(765): </Dynamic>
+            <Dynamic>a[8]</Dynamic>
+            <Navigation>c:/users/justin/onedrive/projects/ebvc/v1/source/main.v</Navigation>
+            <Navigation>765</Navigation>
         </Message>
         <Message>
             <ID>35001611</ID>

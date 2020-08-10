@@ -5,22 +5,22 @@ EE //Value
 11 //LDZ		Load Z Register from F0
 F0 //Address
 23 //ADZ		Add Z Register to A Register
-46 //JSR		Jump to Sub Routine
+86 //JSR		Jump to Sub Routine
 11 //Address
 1B //STA		Store ALU to F0
 F0 //Address
-85 //OTA		Output A Register to BUS
-63 //CPX		Compare X Register to ALU
-42 //JZS		Jump if Zero Flag Set
+FD //OTA		Output A Register to BUS
+C3 //CPX		Compare X Register to ALU
+82 //JZS		Jump if Zero Flag Set
 15 //Address
-41 //JMP		Jump to Address
+81 //JMP		Jump to Address
 03 //Address
 25 //ADI		Add Immediate Value (1) to ALU
 01 //Value
-85 //OTA
-47 //RSR		Return from Sub Routine
+FD //OTA
+87 //RSR		Return from Sub Routine
 1C //CLA		Clear the ALU
 1B //STA		Store ALU to F0
 F0 //Address
-41 //JMP		Jump to Address
+81 //JMP		Jump to Address
 03 //Address

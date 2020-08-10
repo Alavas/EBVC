@@ -1,69 +1,152 @@
 [ START MERGED ]
 counter_12__N_25 MEMADDR_c_12
-MEMADDR_c_12_enable_20 MEMADDR_c_6
+IREG_7__N_218 MEMADDR_c_6
+n15118 n3047
 [ END MERGED ]
 [ START CLIPPED ]
 VCC_net
-add_1296_9/CO
-add_1276_1/S1
-add_1276_1/S0
-add_1276_1/CI
-equal_3978_0/S1
-equal_3978_0/S0
-equal_3978_0/CI
-add_1276_9/CO
-equal_3978_7/S1
-equal_3978_7/S0
-add_1300_1/S0
-add_1300_1/CI
-equal_3978_8/S0
-equal_3978_8/CO
-add_1331_1/S1
-add_1331_1/S0
-add_1331_1/CI
-add_1288_9/CO
-add_1288_1/S0
-add_1288_1/CI
-add_1300_9/CO
-PCNT_3911_add_4_1/S0
-PCNT_3911_add_4_1/CI
-PCNT_3911_add_4_9/S1
-PCNT_3911_add_4_9/CO
-counter_3910_3955_add_4_1/S0
-counter_3910_3955_add_4_1/CI
-counter_3910_3955_add_4_13/CO
-add_1292_9/CO
-add_1331_11/S1
-add_1331_11/CO
-add_1296_1/S0
-add_1296_1/CI
-add_1292_1/S0
-add_1292_1/CI
+mult_9u_8u_0_cin_lr_add_2_adj_158/S1
+mult_9u_8u_0_cin_lr_add_2_adj_158/S0
+mult_9u_8u_0_cin_lr_add_4_adj_157/S1
+mult_9u_8u_0_cin_lr_add_4_adj_157/S0
+mult_9u_8u_0_cin_lr_add_6_adj_156/S1
+mult_9u_8u_0_cin_lr_add_6_adj_156/S0
+Cadd_mult_9u_8u_0_0_1_adj_155/S0
+mult_9u_8u_0_add_0_4_adj_151/COUT
+Cadd_mult_9u_8u_0_1_1_adj_150/S0
+mult_9u_8u_0_add_1_2_adj_149/COUT
+Cadd_t_mult_9u_8u_0_2_1_adj_148/S0
+t_mult_9u_8u_0_add_2_3_adj_145/COUT
+mult_9u_8u_0_mult_0_3_adj_139/CO
+mult_9u_8u_0_mult_2_2_adj_136/CO
+mult_9u_8u_0_mult_4_1_adj_133/CO
+mult_9u_8u_0_mult_6_0_adj_132/CO
+mult_9u_8u_0_cin_lr_add_2_adj_125/S1
+mult_9u_8u_0_cin_lr_add_2_adj_125/S0
+mult_9u_8u_0_cin_lr_add_4_adj_123/S1
+mult_9u_8u_0_cin_lr_add_4_adj_123/S0
+mult_9u_8u_0_cin_lr_add_0_adj_122/S1
+mult_9u_8u_0_cin_lr_add_0_adj_122/S0
+mult_9u_8u_0_cin_lr_add_6_adj_121/S1
+mult_9u_8u_0_cin_lr_add_6_adj_121/S0
+Cadd_mult_9u_8u_0_0_1_adj_120/S0
+mult_9u_8u_0_add_0_4_adj_116/COUT
+Cadd_mult_9u_8u_0_1_1_adj_114/S0
+mult_9u_8u_0_add_1_2_adj_113/COUT
+Cadd_t_mult_9u_8u_0_2_1_adj_109/S0
+t_mult_9u_8u_0_add_2_3_adj_107/COUT
+mult_9u_8u_0_mult_0_3_adj_101/CO
+mult_9u_8u_0_mult_2_2_adj_97/CO
+mult_9u_8u_0_mult_4_1_adj_95/CO
+mult_9u_8u_0_mult_6_0_adj_92/CO
+mult_9u_8u_0_cin_lr_add_2_adj_86/S1
+mult_9u_8u_0_cin_lr_add_2_adj_86/S0
+mult_9u_8u_0_cin_lr_add_4_adj_84/S1
+mult_9u_8u_0_cin_lr_add_4_adj_84/S0
+mult_9u_8u_0_cin_lr_add_6_adj_82/S1
+mult_9u_8u_0_cin_lr_add_6_adj_82/S0
+Cadd_mult_9u_8u_0_0_1_adj_81/S0
+mult_9u_8u_0_add_0_4_adj_78/COUT
+Cadd_mult_9u_8u_0_1_1_adj_76/S0
+mult_9u_8u_0_add_1_2_adj_75/COUT
+Cadd_t_mult_9u_8u_0_2_1_adj_72/S0
+t_mult_9u_8u_0_add_2_3_adj_70/COUT
+mult_9u_8u_0_mult_0_3_adj_63/CO
+mult_9u_8u_0_mult_2_2_adj_60/CO
+mult_9u_8u_0_mult_4_1_adj_54/CO
+add_1445_1/S0
+add_1445_1/CI
+mult_9u_8u_0_mult_6_0_adj_53/CO
+add_1449_9/CO
+add_1478_11/S1
+add_1478_11/CO
+add_1457_1/S0
+add_1457_1/CI
+mult_9u_8u_0_cin_lr_add_2/S1
+mult_9u_8u_0_cin_lr_add_2/S0
+mult_9u_8u_0_cin_lr_add_4/S1
+mult_9u_8u_0_cin_lr_add_4/S0
+mult_9u_8u_0_cin_lr_add_6/S1
+mult_9u_8u_0_cin_lr_add_6/S0
+Cadd_mult_9u_8u_0_0_1/S0
+mult_9u_8u_0_add_0_4/COUT
+add_1449_1/S0
+add_1449_1/CI
+Cadd_mult_9u_8u_0_1_1/S0
+mult_9u_8u_0_add_1_2/COUT
+Cadd_t_mult_9u_8u_0_2_1/S0
+add_1457_9/CO
+t_mult_9u_8u_0_add_2_3/COUT
+mult_9u_8u_0_mult_0_3/CO
+mult_9u_8u_0_mult_2_2/CO
+PCNT_4856_add_4_1/S0
+PCNT_4856_add_4_1/CI
+mult_9u_8u_0_mult_4_1/CO
+add_1445_9/CO
+mult_9u_8u_0_mult_6_0/CO
+add_1453_1/S0
+add_1453_1/CI
+PCNT_4856_add_4_9/S1
+PCNT_4856_add_4_9/CO
+equal_4925_0/S1
+equal_4925_0/S0
+equal_4925_0/CI
+counter_4855_4902_add_4_1/S0
+counter_4855_4902_add_4_1/CI
+counter_4855_4902_add_4_13/CO
+sub_305_add_2_1/S1
+sub_305_add_2_1/S0
+sub_305_add_2_1/CI
+add_1453_9/CO
+equal_4925_8/S0
+equal_4925_8/CO
+add_1443_1/S1
+add_1443_1/S0
+add_1443_1/CI
+add_1443_9/CO
+sub_305_add_2_11/S1
+sub_305_add_2_11/CO
+equal_4925_7/S1
+equal_4925_7/S0
+add_1481_1/S1
+add_1481_1/S0
+add_1481_1/CI
+add_1481_11/S1
+add_1481_11/CO
+add_1478_1/S1
+add_1478_1/S0
+add_1478_1/CI
+mult_9u_8u_0_cin_lr_add_0_adj_2/S1
+mult_9u_8u_0_cin_lr_add_0_adj_2/S0
+mult_9u_8u_0_cin_lr_add_0_adj_1/S1
+mult_9u_8u_0_cin_lr_add_0_adj_1/S0
+mult_9u_8u_0_cin_lr_add_0/S1
+mult_9u_8u_0_cin_lr_add_0/S0
 [ END CLIPPED ]
 [ START OSC ]
 clk 2.08
 [ END OSC ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.11.0.396.4 -- WARNING: Map write only section -- Sun Jul 12 11:06:10 2020
+# map:  version Diamond (64-bit) 3.11.0.396.4 -- WARNING: Map write only section -- Mon Aug 10 17:59:55 2020
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
-LOCATE COMP "PORTA[6]" SITE "14" ;
-LOCATE COMP "PORTA[7]" SITE "13" ;
+LOCATE COMP "PORTA[4]" SITE "17" ;
 LOCATE COMP "MEMADDR[0]" SITE "27" ;
 LOCATE COMP "MEMADDR[1]" SITE "4" ;
 LOCATE COMP "MEMADDR[2]" SITE "5" ;
 LOCATE COMP "MEMADDR[3]" SITE "8" ;
+LOCATE COMP "PORTA[5]" SITE "16" ;
 LOCATE COMP "MEMADDR[4]" SITE "9" ;
 LOCATE COMP "MEMADDR[5]" SITE "10" ;
 LOCATE COMP "MEMADDR[6]" SITE "11" ;
 LOCATE COMP "MEMADDR[7]" SITE "12" ;
+LOCATE COMP "PORTA[6]" SITE "14" ;
 LOCATE COMP "PORTA[0]" SITE "25" ;
 LOCATE COMP "PORTA[1]" SITE "23" ;
 LOCATE COMP "PORTA[2]" SITE "21" ;
 LOCATE COMP "PORTA[3]" SITE "20" ;
-LOCATE COMP "PORTA[4]" SITE "17" ;
-LOCATE COMP "PORTA[5]" SITE "16" ;
+LOCATE COMP "PORTA[7]" SITE "13" ;
 FREQUENCY NET "clk" 2.080000 MHz ;
 SCHEMATIC END ;
 [ END DESIGN PREFS ]

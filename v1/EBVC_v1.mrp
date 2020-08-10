@@ -14,22 +14,22 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-1200HCQFN32
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.11.0.396.4
-Mapped on:  07/12/20  11:06:10
+Mapped on:  08/10/20  17:59:54
 
 Design Summary
 --------------
 
-   Number of registers:    148 out of  1346 (11%)
-      PFU registers:          148 out of  1280 (12%)
+   Number of registers:    149 out of  1346 (11%)
+      PFU registers:          149 out of  1280 (12%)
       PIO registers:            0 out of    66 (0%)
-   Number of SLICEs:       334 out of   640 (52%)
-      SLICEs as Logic/ROM:    334 out of   640 (52%)
+   Number of SLICEs:       444 out of   640 (69%)
+      SLICEs as Logic/ROM:    444 out of   640 (69%)
       SLICEs as RAM:            0 out of   480 (0%)
-      SLICEs as Carry:         46 out of   640 (7%)
-   Number of LUT4s:        666 out of  1280 (52%)
-      Number used as logic LUTs:        574
+      SLICEs as Carry:        150 out of   640 (23%)
+   Number of LUT4s:        886 out of  1280 (69%)
+      Number used as logic LUTs:        586
       Number used as distributed RAM:     0
-      Number used as ripple logic:       92
+      Number used as ripple logic:      300
       Number used as shift registers:     0
    Number of PIO sites used: 16 + 4(JTAG) out of 22 (91%)
    Number of block RAMs:  2 out of 7 (29%)
@@ -57,8 +57,8 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  2
-     Net MEMADDR_c_12: 87 loads, 36 rising, 51 falling (Driver:
-     counter_3910_3955__i12 )
+     Net MEMADDR_c_12: 91 loads, 36 rising, 55 falling (Driver:
+     counter_4855_4902__i12 )
      Net clk: 7 loads, 7 rising, 0 falling (Driver: internal_oscillator_inst )
 
                                     Page 1
@@ -66,45 +66,43 @@ Design Summary
 
 
 
-Design:  Main                                          Date:  07/12/20  11:06:10
+Design:  Main                                          Date:  08/10/20  17:59:54
 
 Design Summary (cont)
 ---------------------
-   Number of Clock Enables:  21
-     Net counter_12__N_25_enable_12: 4 loads, 4 LSLICEs
+   Number of Clock Enables:  19
+     Net counter_12__N_25_enable_13: 4 loads, 4 LSLICEs
+     Net MEMADDR_c_12_enable_20: 6 loads, 6 LSLICEs
+     Net counter_12__N_25_enable_65: 4 loads, 4 LSLICEs
      Net counter_12__N_25_enable_58: 4 loads, 4 LSLICEs
-     Net counter_12__N_25_enable_51: 4 loads, 4 LSLICEs
-     Net MEMADDR_c_12_enable_26: 6 loads, 6 LSLICEs
-     Net MEMADDR_c_12_enable_24: 6 loads, 5 LSLICEs
-     Net counter_12__N_25_enable_44: 5 loads, 5 LSLICEs
-     Net counter_12__N_25_enable_35: 4 loads, 4 LSLICEs
-     Net counter_12__N_25_enable_20: 8 loads, 8 LSLICEs
-     Net counter_12__N_25_enable_28: 8 loads, 8 LSLICEs
-     Net counter_12__N_25_enable_73: 4 loads, 4 LSLICEs
-     Net counter_12__N_25_enable_64: 1 loads, 1 LSLICEs
-     Net MEMADDR_c_6: 2 loads, 2 LSLICEs
-     Net MEMADDR_c_12_enable_25: 1 loads, 0 LSLICEs
-     Net counter_12__N_25_enable_37: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_49: 4 loads, 4 LSLICEs
+     Net counter_12__N_25_enable_41: 9 loads, 9 LSLICEs
+     Net counter_12__N_25_enable_30: 4 loads, 4 LSLICEs
+     Net counter_12__N_25_enable_21: 8 loads, 8 LSLICEs
+     Net counter_12__N_25_enable_66: 8 loads, 8 LSLICEs
+     Net MEMADDR_c_12_enable_23: 6 loads, 5 LSLICEs
+     Net counter_12__N_25_enable_68: 1 loads, 1 LSLICEs
      Net MEMADDR_6__N_23: 1 loads, 1 LSLICEs
-     Net counter_12__N_25_enable_59: 1 loads, 1 LSLICEs
-     Net counter_12__N_25_enable_60: 1 loads, 1 LSLICEs
-     Net counter_12__N_25_enable_61: 1 loads, 1 LSLICEs
-     Net counter_12__N_25_enable_62: 1 loads, 1 LSLICEs
-     Net counter_12__N_25_enable_63: 1 loads, 1 LSLICEs
-     Net counter_12__N_25_enable_72: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_69: 1 loads, 1 LSLICEs
+     Net MEMADDR_c_6: 2 loads, 2 LSLICEs
+     Net MEMADDR_c_12_enable_24: 1 loads, 0 LSLICEs
+     Net counter_12__N_25_enable_52: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_71: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_67: 1 loads, 1 LSLICEs
+     Net counter_12__N_25_enable_70: 1 loads, 1 LSLICEs
    Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net IREG_1: 145 loads
-     Net IREG_2: 137 loads
-     Net IREG_0: 97 loads
-     Net IREG_6: 77 loads
-     Net IREG_3: 65 loads
-     Net IREG_5: 60 loads
-     Net IREG_4: 58 loads
-     Net IREG_7: 49 loads
-     Net SCNT_0: 42 loads
-     Net n15196: 25 loads
+     Net IREG_1: 122 loads
+     Net IREG_2: 98 loads
+     Net IREG_0: 82 loads
+     Net IREG_4: 62 loads
+     Net SCNT_0: 57 loads
+     Net IREG_5: 56 loads
+     Net IREG_6: 56 loads
+     Net ALU_1: 49 loads
+     Net ALU_0: 47 loads
+     Net ALU_2: 45 loads
 
 
 
@@ -125,27 +123,27 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| PORTA[6]            | OUTPUT    | LVCMOS25  |            |
+| PORTA[4]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MEMADDR[0]          | OUTPUT    | LVCMOS25  |            |
 
                                     Page 2
 
 
 
 
-Design:  Main                                          Date:  07/12/20  11:06:10
+Design:  Main                                          Date:  08/10/20  17:59:54
 
 IO (PIO) Attributes (cont)
 --------------------------
-+---------------------+-----------+-----------+------------+
-| PORTA[7]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| MEMADDR[0]          | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | MEMADDR[1]          | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | MEMADDR[2]          | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | MEMADDR[3]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| PORTA[5]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | MEMADDR[4]          | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -155,6 +153,8 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | MEMADDR[7]          | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
+| PORTA[6]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
 | PORTA[0]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | PORTA[1]            | OUTPUT    | LVCMOS25  |            |
@@ -163,9 +163,7 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | PORTA[3]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| PORTA[4]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| PORTA[5]            | OUTPUT    | LVCMOS25  |            |
+| PORTA[7]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 
 Removed logic
@@ -173,58 +171,236 @@ Removed logic
 
 Block GSR_INST undriven or does not drive anything - clipped.
 Signal counter_12__N_25 was merged into signal MEMADDR_c_12
-Signal MEMADDR_c_12_enable_20 was merged into signal MEMADDR_c_6
+Signal n15118 was merged into signal n3047
+Signal IREG_7__N_218 was merged into signal MEMADDR_c_6
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal add_1296_9/CO undriven or does not drive anything - clipped.
-Signal add_1276_1/S1 undriven or does not drive anything - clipped.
-Signal add_1276_1/S0 undriven or does not drive anything - clipped.
-Signal add_1276_1/CI undriven or does not drive anything - clipped.
-Signal equal_3978_0/S1 undriven or does not drive anything - clipped.
-Signal equal_3978_0/S0 undriven or does not drive anything - clipped.
-Signal equal_3978_0/CI undriven or does not drive anything - clipped.
-Signal add_1276_9/CO undriven or does not drive anything - clipped.
-Signal equal_3978_7/S1 undriven or does not drive anything - clipped.
-Signal equal_3978_7/S0 undriven or does not drive anything - clipped.
-Signal add_1300_1/S0 undriven or does not drive anything - clipped.
-Signal add_1300_1/CI undriven or does not drive anything - clipped.
-Signal equal_3978_8/S0 undriven or does not drive anything - clipped.
-Signal equal_3978_8/CO undriven or does not drive anything - clipped.
-Signal add_1331_1/S1 undriven or does not drive anything - clipped.
-Signal add_1331_1/S0 undriven or does not drive anything - clipped.
-Signal add_1331_1/CI undriven or does not drive anything - clipped.
+Signal mult_9u_8u_0_cin_lr_add_2_adj_158/S1 undriven or does not drive anything
+     - clipped.
+Signal mult_9u_8u_0_cin_lr_add_2_adj_158/S0 undriven or does not drive anything
+     - clipped.
+Signal mult_9u_8u_0_cin_lr_add_4_adj_157/S1 undriven or does not drive anything
+     - clipped.
+Signal mult_9u_8u_0_cin_lr_add_4_adj_157/S0 undriven or does not drive anything
+     - clipped.
+Signal mult_9u_8u_0_cin_lr_add_6_adj_156/S1 undriven or does not drive anything
+     - clipped.
+Signal mult_9u_8u_0_cin_lr_add_6_adj_156/S0 undriven or does not drive anything
+     - clipped.
+Signal Cadd_mult_9u_8u_0_0_1_adj_155/S0 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_add_0_4_adj_151/COUT undriven or does not drive anything -
+     clipped.
+Signal Cadd_mult_9u_8u_0_1_1_adj_150/S0 undriven or does not drive anything -
+     clipped.
 
                                     Page 3
 
 
 
 
-Design:  Main                                          Date:  07/12/20  11:06:10
+Design:  Main                                          Date:  08/10/20  17:59:54
 
 Removed logic (cont)
 --------------------
-Signal add_1288_9/CO undriven or does not drive anything - clipped.
-Signal add_1288_1/S0 undriven or does not drive anything - clipped.
-Signal add_1288_1/CI undriven or does not drive anything - clipped.
-Signal add_1300_9/CO undriven or does not drive anything - clipped.
-Signal PCNT_3911_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal PCNT_3911_add_4_1/CI undriven or does not drive anything - clipped.
-Signal PCNT_3911_add_4_9/S1 undriven or does not drive anything - clipped.
-Signal PCNT_3911_add_4_9/CO undriven or does not drive anything - clipped.
-Signal counter_3910_3955_add_4_1/S0 undriven or does not drive anything -
+Signal mult_9u_8u_0_add_1_2_adj_149/COUT undriven or does not drive anything -
      clipped.
-Signal counter_3910_3955_add_4_1/CI undriven or does not drive anything -
+Signal Cadd_t_mult_9u_8u_0_2_1_adj_148/S0 undriven or does not drive anything -
      clipped.
-Signal counter_3910_3955_add_4_13/CO undriven or does not drive anything -
+Signal t_mult_9u_8u_0_add_2_3_adj_145/COUT undriven or does not drive anything -
      clipped.
-Signal add_1292_9/CO undriven or does not drive anything - clipped.
-Signal add_1331_11/S1 undriven or does not drive anything - clipped.
-Signal add_1331_11/CO undriven or does not drive anything - clipped.
-Signal add_1296_1/S0 undriven or does not drive anything - clipped.
-Signal add_1296_1/CI undriven or does not drive anything - clipped.
-Signal add_1292_1/S0 undriven or does not drive anything - clipped.
-Signal add_1292_1/CI undriven or does not drive anything - clipped.
-Block i11985 was optimized away.
-Block i18_1_lut_rep_276 was optimized away.
+Signal mult_9u_8u_0_mult_0_3_adj_139/CO undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_mult_2_2_adj_136/CO undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_mult_4_1_adj_133/CO undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_mult_6_0_adj_132/CO undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_cin_lr_add_2_adj_125/S1 undriven or does not drive anything
+     - clipped.
+Signal mult_9u_8u_0_cin_lr_add_2_adj_125/S0 undriven or does not drive anything
+     - clipped.
+Signal mult_9u_8u_0_cin_lr_add_4_adj_123/S1 undriven or does not drive anything
+     - clipped.
+Signal mult_9u_8u_0_cin_lr_add_4_adj_123/S0 undriven or does not drive anything
+     - clipped.
+Signal mult_9u_8u_0_cin_lr_add_0_adj_122/S1 undriven or does not drive anything
+     - clipped.
+Signal mult_9u_8u_0_cin_lr_add_0_adj_122/S0 undriven or does not drive anything
+     - clipped.
+Signal mult_9u_8u_0_cin_lr_add_6_adj_121/S1 undriven or does not drive anything
+     - clipped.
+Signal mult_9u_8u_0_cin_lr_add_6_adj_121/S0 undriven or does not drive anything
+     - clipped.
+Signal Cadd_mult_9u_8u_0_0_1_adj_120/S0 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_add_0_4_adj_116/COUT undriven or does not drive anything -
+     clipped.
+Signal Cadd_mult_9u_8u_0_1_1_adj_114/S0 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_add_1_2_adj_113/COUT undriven or does not drive anything -
+     clipped.
+Signal Cadd_t_mult_9u_8u_0_2_1_adj_109/S0 undriven or does not drive anything -
+     clipped.
+Signal t_mult_9u_8u_0_add_2_3_adj_107/COUT undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_mult_0_3_adj_101/CO undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_mult_2_2_adj_97/CO undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_mult_4_1_adj_95/CO undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_mult_6_0_adj_92/CO undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_cin_lr_add_2_adj_86/S1 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_cin_lr_add_2_adj_86/S0 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_cin_lr_add_4_adj_84/S1 undriven or does not drive anything -
+     clipped.
+
+                                    Page 4
+
+
+
+
+Design:  Main                                          Date:  08/10/20  17:59:54
+
+Removed logic (cont)
+--------------------
+Signal mult_9u_8u_0_cin_lr_add_4_adj_84/S0 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_cin_lr_add_6_adj_82/S1 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_cin_lr_add_6_adj_82/S0 undriven or does not drive anything -
+     clipped.
+Signal Cadd_mult_9u_8u_0_0_1_adj_81/S0 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_add_0_4_adj_78/COUT undriven or does not drive anything -
+     clipped.
+Signal Cadd_mult_9u_8u_0_1_1_adj_76/S0 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_add_1_2_adj_75/COUT undriven or does not drive anything -
+     clipped.
+Signal Cadd_t_mult_9u_8u_0_2_1_adj_72/S0 undriven or does not drive anything -
+     clipped.
+Signal t_mult_9u_8u_0_add_2_3_adj_70/COUT undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_mult_0_3_adj_63/CO undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_mult_2_2_adj_60/CO undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_mult_4_1_adj_54/CO undriven or does not drive anything -
+     clipped.
+Signal add_1445_1/S0 undriven or does not drive anything - clipped.
+Signal add_1445_1/CI undriven or does not drive anything - clipped.
+Signal mult_9u_8u_0_mult_6_0_adj_53/CO undriven or does not drive anything -
+     clipped.
+Signal add_1449_9/CO undriven or does not drive anything - clipped.
+Signal add_1478_11/S1 undriven or does not drive anything - clipped.
+Signal add_1478_11/CO undriven or does not drive anything - clipped.
+Signal add_1457_1/S0 undriven or does not drive anything - clipped.
+Signal add_1457_1/CI undriven or does not drive anything - clipped.
+Signal mult_9u_8u_0_cin_lr_add_2/S1 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_cin_lr_add_2/S0 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_cin_lr_add_4/S1 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_cin_lr_add_4/S0 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_cin_lr_add_6/S1 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_cin_lr_add_6/S0 undriven or does not drive anything -
+     clipped.
+Signal Cadd_mult_9u_8u_0_0_1/S0 undriven or does not drive anything - clipped.
+Signal mult_9u_8u_0_add_0_4/COUT undriven or does not drive anything - clipped.
+Signal add_1449_1/S0 undriven or does not drive anything - clipped.
+Signal add_1449_1/CI undriven or does not drive anything - clipped.
+Signal Cadd_mult_9u_8u_0_1_1/S0 undriven or does not drive anything - clipped.
+Signal mult_9u_8u_0_add_1_2/COUT undriven or does not drive anything - clipped.
+Signal Cadd_t_mult_9u_8u_0_2_1/S0 undriven or does not drive anything - clipped.
+     
+Signal add_1457_9/CO undriven or does not drive anything - clipped.
+Signal t_mult_9u_8u_0_add_2_3/COUT undriven or does not drive anything -
+     clipped.
+
+                                    Page 5
+
+
+
+
+Design:  Main                                          Date:  08/10/20  17:59:54
+
+Removed logic (cont)
+--------------------
+Signal mult_9u_8u_0_mult_0_3/CO undriven or does not drive anything - clipped.
+Signal mult_9u_8u_0_mult_2_2/CO undriven or does not drive anything - clipped.
+Signal PCNT_4856_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal PCNT_4856_add_4_1/CI undriven or does not drive anything - clipped.
+Signal mult_9u_8u_0_mult_4_1/CO undriven or does not drive anything - clipped.
+Signal add_1445_9/CO undriven or does not drive anything - clipped.
+Signal mult_9u_8u_0_mult_6_0/CO undriven or does not drive anything - clipped.
+Signal add_1453_1/S0 undriven or does not drive anything - clipped.
+Signal add_1453_1/CI undriven or does not drive anything - clipped.
+Signal PCNT_4856_add_4_9/S1 undriven or does not drive anything - clipped.
+Signal PCNT_4856_add_4_9/CO undriven or does not drive anything - clipped.
+Signal equal_4925_0/S1 undriven or does not drive anything - clipped.
+Signal equal_4925_0/S0 undriven or does not drive anything - clipped.
+Signal equal_4925_0/CI undriven or does not drive anything - clipped.
+Signal counter_4855_4902_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal counter_4855_4902_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal counter_4855_4902_add_4_13/CO undriven or does not drive anything -
+     clipped.
+Signal sub_305_add_2_1/S1 undriven or does not drive anything - clipped.
+Signal sub_305_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal sub_305_add_2_1/CI undriven or does not drive anything - clipped.
+Signal add_1453_9/CO undriven or does not drive anything - clipped.
+Signal equal_4925_8/S0 undriven or does not drive anything - clipped.
+Signal equal_4925_8/CO undriven or does not drive anything - clipped.
+Signal add_1443_1/S1 undriven or does not drive anything - clipped.
+Signal add_1443_1/S0 undriven or does not drive anything - clipped.
+Signal add_1443_1/CI undriven or does not drive anything - clipped.
+Signal add_1443_9/CO undriven or does not drive anything - clipped.
+Signal sub_305_add_2_11/S1 undriven or does not drive anything - clipped.
+Signal sub_305_add_2_11/CO undriven or does not drive anything - clipped.
+Signal equal_4925_7/S1 undriven or does not drive anything - clipped.
+Signal equal_4925_7/S0 undriven or does not drive anything - clipped.
+Signal add_1481_1/S1 undriven or does not drive anything - clipped.
+Signal add_1481_1/S0 undriven or does not drive anything - clipped.
+Signal add_1481_1/CI undriven or does not drive anything - clipped.
+Signal add_1481_11/S1 undriven or does not drive anything - clipped.
+Signal add_1481_11/CO undriven or does not drive anything - clipped.
+Signal add_1478_1/S1 undriven or does not drive anything - clipped.
+Signal add_1478_1/S0 undriven or does not drive anything - clipped.
+Signal add_1478_1/CI undriven or does not drive anything - clipped.
+Signal mult_9u_8u_0_cin_lr_add_0_adj_2/S1 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_cin_lr_add_0_adj_2/S0 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_cin_lr_add_0_adj_1/S1 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_cin_lr_add_0_adj_1/S0 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_cin_lr_add_0/S1 undriven or does not drive anything -
+     clipped.
+Signal mult_9u_8u_0_cin_lr_add_0/S0 undriven or does not drive anything -
+     clipped.
+Block i11865 was optimized away.
+Block i11225_1_lut was optimized away.
+
+                                    Page 6
+
+
+
+
+Design:  Main                                          Date:  08/10/20  17:59:54
+
+Removed logic (cont)
+--------------------
+Block i15_1_lut was optimized away.
 Block i2 was optimized away.
 
 Memory Usage
@@ -233,8 +409,8 @@ Memory Usage
 /:
     EBRs: 2
     RAM SLICEs: 0
-    Logic SLICEs: 282
-    PFU Registers: 148
+    Logic SLICEs: 413
+    PFU Registers: 149
     -Contains EBR memory_d00:  TYPE= DP8KC,  Width_A= 8,  Depth_A= 256,
          Depth_B= 256,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
          ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= READBEFOREWRITE,  WRITEMODE_B=
@@ -256,16 +432,6 @@ OSC 1:                                     Pin/Node Value
   OSC Output:                              NODE     clk
   OSC Nominal Frequency (MHz):                      2.08
 
-
-
-
-                                    Page 4
-
-
-
-
-Design:  Main                                          Date:  07/12/20  11:06:10
-
 ASIC Components
 ---------------
 
@@ -281,7 +447,7 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 43 MB
+   Peak Memory Usage: 44 MB
         
 
 
@@ -291,41 +457,7 @@ Run Time and Memory Usage
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    Page 5
+                                    Page 7
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
