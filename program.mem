@@ -1,26 +1,17 @@
-00 //NOP		No Operation
-02 //LIX		Load X Register with Immediate Value (EE)
-EE //Value
-1C //CLA		Clear the ALU
-11 //LDZ		Load Z Register from F0
-F0 //Address
-23 //ADZ		Add Z Register to A Register
-86 //JSR		Jump to Sub Routine
-11 //Address
-1B //STA		Store ALU to F0
-F0 //Address
-FD //OTA		Output A Register to BUS
-C3 //CPX		Compare X Register to ALU
-82 //JZS		Jump if Zero Flag Set
-15 //Address
-81 //JMP		Jump to Address
-03 //Address
-25 //ADI		Add Immediate Value (1) to ALU
-01 //Value
-FD //OTA
-87 //RSR		Return from Sub Routine
-1C //CLA		Clear the ALU
-1B //STA		Store ALU to F0
-F0 //Address
-81 //JMP		Jump to Address
-03 //Address
+00	//NOP		No Operation
+1A	//LIA		Load A Immediate Value
+80	//Value		b'10000000
+C6	//CLC		Clear Carry
+FD	//OTA		Output A
+6A	//ROR		Rotate Left
+84	//JCS		Jump if Carry Set
+0A	//Address
+81	//JMP		Jump Back to Start
+03	//Address
+C6	//CLC		Clear Carry
+FD	//OTA
+69	//ROL
+84	//JCS		Jump if Carry Set
+03	//Address
+81	//JMP	
+0B	//Address

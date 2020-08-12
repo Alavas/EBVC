@@ -458,9 +458,6 @@ module Main (PORTA,MEMADDR);
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -479,9 +476,6 @@ module Main (PORTA,MEMADDR);
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -500,9 +494,6 @@ module Main (PORTA,MEMADDR);
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -530,9 +521,6 @@ module Main (PORTA,MEMADDR);
 						4'b0100: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -555,9 +543,6 @@ module Main (PORTA,MEMADDR);
 						4'b0011: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -577,9 +562,6 @@ module Main (PORTA,MEMADDR);
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -598,9 +580,6 @@ module Main (PORTA,MEMADDR);
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -619,9 +598,6 @@ module Main (PORTA,MEMADDR);
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -649,9 +625,6 @@ module Main (PORTA,MEMADDR);
 						4'b0100: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -674,9 +647,6 @@ module Main (PORTA,MEMADDR);
 						4'b0011: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -695,9 +665,6 @@ module Main (PORTA,MEMADDR);
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -716,9 +683,6 @@ module Main (PORTA,MEMADDR);
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -737,9 +701,6 @@ module Main (PORTA,MEMADDR);
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -767,9 +728,6 @@ module Main (PORTA,MEMADDR);
 						4'b0100: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -792,9 +750,6 @@ module Main (PORTA,MEMADDR);
 						4'b0011: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -813,9 +768,6 @@ module Main (PORTA,MEMADDR);
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -829,14 +781,12 @@ module Main (PORTA,MEMADDR);
 			LSR : begin
 					case(SCNT)
 						4'b0001: begin
-								ALU <= ALU >> 1;				//Shift right 1 bit.
+								ALU[8]		<= ALU[0];			//Move 0 bit to Carry.
+								ALU 		<= ALU[7:0] >> 1;	//Shift right 1 bit.
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -850,14 +800,11 @@ module Main (PORTA,MEMADDR);
 			ROL : begin
 					case(SCNT)
 						4'b0001: begin
-								ALU <= {ALU[7:0], ALU[8]};
+								ALU			<= {ALU[7:0], ALU[8]};
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -871,14 +818,11 @@ module Main (PORTA,MEMADDR);
 			ROR : begin
 					case(SCNT)
 						4'b0001: begin
-								ALU <= {ALU[0], ALU[8:1]};
+								ALU			<= {ALU[0], ALU[8:1]};
 							end
 						4'b0010: begin
 								SC			<= 1;				//Reset the Step Counter.
 								SREG[CF]	<= ALU[8];			//Set Carry Flag.
-								if (ALU[8] == 1) begin
-									SREG[CF] <= 1;				//Set Carry Flag.
-								end
 								if (ALU == 0) begin				
 									SREG[ZF] <= 1;				//Set Zero Flag.
 								end
@@ -1036,7 +980,8 @@ module Main (PORTA,MEMADDR);
 				end
 			// Clear Carry Flag
 			CLC : begin
-					SREG[CF] 	<= 0;							//Clear the Carry Flag.
+					SREG[CF] 		<= 0;						//Clear the Carry Flag.
+					//ALU[8]			<= 0;						//Clear the Carry Flag in the ALU.
 					SC				<= 1;						//Reset the Step Counter	
 				end
 			// Transfer X Register to the ALU
@@ -1181,18 +1126,18 @@ module Main (PORTA,MEMADDR);
 				end
 			// Output Y Register to PORTA
 			OTY : begin
-					SC			<= 1;							//Reset the Step Counter.
+					SC			<= 1;				 			//Reset the Step Counter.
 					PORTA		<= YREG;						//Set PORTA equal to the Y Register.
 				end
 			// Output Z Register to PORTA
 			OTZ : begin
 					SC			<= 1;							//Reset the Step Counter.
-					PORTA 	<= ZREG;							//Set PORTA equal to the Z Register.
+					PORTA 		<= ZREG;						//Set PORTA equal to the Z Register.
 				end
 			// Output ALU to PORTA
 			OTA : begin
 					SC			<= 1;							//Reset the Step Counter.
-					PORTA		<= ALU;							//Set PORTA equal to the ALU.
+					PORTA		<= ALU[7:0];							//Set PORTA equal to the ALU.
 				end
 			// Halt Counter
 			HLT : begin

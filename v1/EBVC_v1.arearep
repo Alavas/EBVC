@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------
 Report for cell Main.TECH
-Register bits:  149 of 1346 (11.070%)
+Register bits:  150 of 1346 (11.144%)
 I/O cells:      16
                                   Cell usage:
                                cell     count   Res Usage(%)
@@ -8,15 +8,15 @@ I/O cells:      16
                               CCU2D        58          100.0
                               DP8KC         2          100.0
                              FADD2B        52          100.0
-                            FD1P3AX        97          100.0
+                            FD1P3AX        98          100.0
                             FD1S3AX        52          100.0
                                 GSR         1          100.0
                                 INV         1          100.0
                             L6MUX21         8          100.0
-                               LUT4       559          100.0
+                               LUT4       579          100.0
                               MULT2        40          100.0
                                  OB        16          100.0
                                OSCH         1          100.0
                               PFUMX        56          100.0
                           ROM256X1A         1          100.0
-                              TOTAL       960
+                              TOTAL       981

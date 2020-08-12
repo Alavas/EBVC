@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Mon Aug 10 17:59:53 2020
+Tue Aug 11 19:34:24 2020
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -27,36 +27,36 @@ Passed:  The following path meets requirements by 0.184ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3AX    CK             counter_4855_4902__i0  (from clk +)
-   Destination:    FD1S3AX    D              counter_4855_4902__i11  (to clk +)
+   Source:         FD1S3AX    CK             counter_4813_4860__i0  (from clk +)
+   Destination:    FD1S3AX    D              counter_4813_4860__i11  (to clk +)
 
    Delay:                   4.656ns  (57.0% logic, 43.0% route), 8 logic levels.
 
  Constraint Details:
 
-      4.656ns data_path counter_4855_4902__i0 to counter_4855_4902__i11 meets
+      4.656ns data_path counter_4813_4860__i0 to counter_4813_4860__i11 meets
       5.000ns delay constraint less
       0.160ns L_S requirement (totaling 4.840ns) by 0.184ns
 
- Path Details: counter_4855_4902__i0 to counter_4855_4902__i11
+ Path Details: counter_4813_4860__i0 to counter_4813_4860__i11
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              counter_4855_4902__i0 (from clk)
-Route         1   e 0.941                                  n13_adj_95
-A1_TO_FCO   ---     0.827           A[2] to COUT           counter_4855_4902_add_4_1
+L_CO        ---     0.444             CK to Q              counter_4813_4860__i0 (from clk)
+Route         1   e 0.941                                  n13
+A1_TO_FCO   ---     0.827           A[2] to COUT           counter_4813_4860_add_4_1
+Route         1   e 0.020                                  n13991
+FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4813_4860_add_4_3
+Route         1   e 0.020                                  n13992
+FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4813_4860_add_4_5
+Route         1   e 0.020                                  n13993
+FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4813_4860_add_4_7
 Route         1   e 0.020                                  n13994
-FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4855_4902_add_4_3
+FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4813_4860_add_4_9
 Route         1   e 0.020                                  n13995
-FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4855_4902_add_4_5
+FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4813_4860_add_4_11
 Route         1   e 0.020                                  n13996
-FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4855_4902_add_4_7
-Route         1   e 0.020                                  n13997
-FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4855_4902_add_4_9
-Route         1   e 0.020                                  n13998
-FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4855_4902_add_4_11
-Route         1   e 0.020                                  n13999
-FCI_TO_F    ---     0.598            CIN to S[2]           counter_4855_4902_add_4_13
-Route         1   e 0.941                                  n59
+FCI_TO_F    ---     0.598            CIN to S[2]           counter_4813_4860_add_4_13
+Route         1   e 0.941                                  n59_adj_198
                   --------
                     4.656  (57.0% logic, 43.0% route), 8 logic levels.
 
@@ -65,36 +65,36 @@ Passed:  The following path meets requirements by 0.184ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3AX    CK             counter_4855_4902__i0  (from clk +)
-   Destination:    FD1S3AX    D              counter_4855_4902__i12  (to clk +)
+   Source:         FD1S3AX    CK             counter_4813_4860__i0  (from clk +)
+   Destination:    FD1S3AX    D              counter_4813_4860__i12  (to clk +)
 
    Delay:                   4.656ns  (57.0% logic, 43.0% route), 8 logic levels.
 
  Constraint Details:
 
-      4.656ns data_path counter_4855_4902__i0 to counter_4855_4902__i12 meets
+      4.656ns data_path counter_4813_4860__i0 to counter_4813_4860__i12 meets
       5.000ns delay constraint less
       0.160ns L_S requirement (totaling 4.840ns) by 0.184ns
 
- Path Details: counter_4855_4902__i0 to counter_4855_4902__i12
+ Path Details: counter_4813_4860__i0 to counter_4813_4860__i12
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              counter_4855_4902__i0 (from clk)
-Route         1   e 0.941                                  n13_adj_95
-A1_TO_FCO   ---     0.827           A[2] to COUT           counter_4855_4902_add_4_1
+L_CO        ---     0.444             CK to Q              counter_4813_4860__i0 (from clk)
+Route         1   e 0.941                                  n13
+A1_TO_FCO   ---     0.827           A[2] to COUT           counter_4813_4860_add_4_1
+Route         1   e 0.020                                  n13991
+FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4813_4860_add_4_3
+Route         1   e 0.020                                  n13992
+FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4813_4860_add_4_5
+Route         1   e 0.020                                  n13993
+FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4813_4860_add_4_7
 Route         1   e 0.020                                  n13994
-FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4855_4902_add_4_3
+FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4813_4860_add_4_9
 Route         1   e 0.020                                  n13995
-FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4855_4902_add_4_5
+FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4813_4860_add_4_11
 Route         1   e 0.020                                  n13996
-FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4855_4902_add_4_7
-Route         1   e 0.020                                  n13997
-FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4855_4902_add_4_9
-Route         1   e 0.020                                  n13998
-FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4855_4902_add_4_11
-Route         1   e 0.020                                  n13999
-FCI_TO_F    ---     0.598            CIN to S[2]           counter_4855_4902_add_4_13
-Route         1   e 0.941                                  n58_adj_4
+FCI_TO_F    ---     0.598            CIN to S[2]           counter_4813_4860_add_4_13
+Route         1   e 0.941                                  n58_adj_84
                   --------
                     4.656  (57.0% logic, 43.0% route), 8 logic levels.
 
@@ -103,34 +103,34 @@ Passed:  The following path meets requirements by 0.361ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3AX    CK             counter_4855_4902__i1  (from clk +)
-   Destination:    FD1S3AX    D              counter_4855_4902__i11  (to clk +)
+   Source:         FD1S3AX    CK             counter_4813_4860__i1  (from clk +)
+   Destination:    FD1S3AX    D              counter_4813_4860__i11  (to clk +)
 
    Delay:                   4.479ns  (55.7% logic, 44.3% route), 7 logic levels.
 
  Constraint Details:
 
-      4.479ns data_path counter_4855_4902__i1 to counter_4855_4902__i11 meets
+      4.479ns data_path counter_4813_4860__i1 to counter_4813_4860__i11 meets
       5.000ns delay constraint less
       0.160ns L_S requirement (totaling 4.840ns) by 0.361ns
 
- Path Details: counter_4855_4902__i1 to counter_4855_4902__i11
+ Path Details: counter_4813_4860__i1 to counter_4813_4860__i11
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              counter_4855_4902__i1 (from clk)
-Route         1   e 0.941                                  n12_adj_94
-A1_TO_FCO   ---     0.827           A[2] to COUT           counter_4855_4902_add_4_3
+L_CO        ---     0.444             CK to Q              counter_4813_4860__i1 (from clk)
+Route         1   e 0.941                                  n12_adj_41
+A1_TO_FCO   ---     0.827           A[2] to COUT           counter_4813_4860_add_4_3
+Route         1   e 0.020                                  n13992
+FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4813_4860_add_4_5
+Route         1   e 0.020                                  n13993
+FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4813_4860_add_4_7
+Route         1   e 0.020                                  n13994
+FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4813_4860_add_4_9
 Route         1   e 0.020                                  n13995
-FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4855_4902_add_4_5
+FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4813_4860_add_4_11
 Route         1   e 0.020                                  n13996
-FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4855_4902_add_4_7
-Route         1   e 0.020                                  n13997
-FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4855_4902_add_4_9
-Route         1   e 0.020                                  n13998
-FCI_TO_FCO  ---     0.157            CIN to COUT           counter_4855_4902_add_4_11
-Route         1   e 0.020                                  n13999
-FCI_TO_F    ---     0.598            CIN to S[2]           counter_4855_4902_add_4_13
-Route         1   e 0.941                                  n59
+FCI_TO_F    ---     0.598            CIN to S[2]           counter_4813_4860_add_4_13
+Route         1   e 0.941                                  n59_adj_198
                   --------
                     4.479  (55.7% logic, 44.3% route), 7 logic levels.
 
@@ -144,144 +144,138 @@ Constraint: create_clock -period 5.000000 -name clk0 [get_nets MEMADDR_c_12]
 --------------------------------------------------------------------------------
 
 
-Error:  The following path violates requirements by 18.182ns
+Error:  The following path violates requirements by 16.650ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             IREG_i0_i2  (from MEMADDR_c_12 +)
+   Destination:    FD1S3AX    D              IC_720  (to MEMADDR_c_12 -)
+
+   Delay:                  18.990ns  (28.3% logic, 71.7% route), 11 logic levels.
+
+ Constraint Details:
+
+     18.990ns data_path IREG_i0_i2 to IC_720 violates
+      2.500ns delay constraint less
+      0.160ns L_S requirement (totaling 2.340ns) by 16.650ns
+
+ Path Details: IREG_i0_i2 to IC_720
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              IREG_i0_i2 (from MEMADDR_c_12)
+Route        95   e 2.526                                  IREG[2]
+LUT4        ---     0.493              B to Z              i1_2_lut_rep_271
+Route        18   e 1.822                                  n15892
+LUT4        ---     0.493              C to Z              i1_2_lut_3_lut_4_lut_adj_187
+Route         1   e 0.941                                  n15_adj_5
+LUT4        ---     0.493              B to Z              i2_4_lut_adj_53
+Route         8   e 1.540                                  n11385
+LUT4        ---     0.493              D to Z              i2_2_lut_4_lut
+Route         1   e 0.941                                  n8_adj_96
+LUT4        ---     0.493              D to Z              i4_4_lut_4_lut
+Route         1   e 0.941                                  n10_adj_87
+LUT4        ---     0.493              B to Z              i5_4_lut
+Route         2   e 1.141                                  n14909
+LUT4        ---     0.493              D to Z              i5_4_lut_adj_36
+Route         1   e 0.941                                  n12
+LUT4        ---     0.493              B to Z              i6_4_lut
+Route         1   e 0.941                                  n14934
+LUT4        ---     0.493              D to Z              i3_4_lut_adj_35
+Route         1   e 0.941                                  n8_adj_197
+LUT4        ---     0.493              B to Z              i4_4_lut_adj_34
+Route         1   e 0.941                                  IC_N_533
+                  --------
+                   18.990  (28.3% logic, 71.7% route), 11 logic levels.
+
+
+Error:  The following path violates requirements by 16.625ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
    Source:         FD1P3AX    CK             IREG_i0_i0  (from MEMADDR_c_12 +)
-   Destination:    FD1S3AX    D              IC_758  (to MEMADDR_c_12 -)
+   Destination:    FD1S3AX    D              IC_720  (to MEMADDR_c_12 -)
 
-   Delay:                  20.522ns  (28.6% logic, 71.4% route), 12 logic levels.
+   Delay:                  18.965ns  (28.3% logic, 71.7% route), 11 logic levels.
 
  Constraint Details:
 
-     20.522ns data_path IREG_i0_i0 to IC_758 violates
+     18.965ns data_path IREG_i0_i0 to IC_720 violates
       2.500ns delay constraint less
-      0.160ns L_S requirement (totaling 2.340ns) by 18.182ns
+      0.160ns L_S requirement (totaling 2.340ns) by 16.625ns
 
- Path Details: IREG_i0_i0 to IC_758
+ Path Details: IREG_i0_i0 to IC_720
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              IREG_i0_i0 (from MEMADDR_c_12)
-Route        77   e 2.517                                  IREG[0]
-LUT4        ---     0.493              B to Z              i3_2_lut_rep_232
-Route        15   e 1.811                                  n15819
-LUT4        ---     0.493              A to Z              i1_3_lut_4_lut_adj_57
-Route         1   e 0.941                                  n14969
-LUT4        ---     0.493              C to Z              i2_4_lut_4_lut
-Route         1   e 0.941                                  n6_adj_159
-LUT4        ---     0.493              B to Z              i3_4_lut_adj_176
-Route         2   e 1.141                                  n14832
-LUT4        ---     0.493              C to Z              i1_2_lut_3_lut_4_lut_adj_8
-Route         1   e 0.941                                  n5_adj_145
-LUT4        ---     0.493              A to Z              i3_4_lut_adj_170
-Route         3   e 1.258                                  n11585
-LUT4        ---     0.493              C to Z              i1_2_lut_rep_136_3_lut_4_lut
-Route         2   e 1.141                                  n15723
-LUT4        ---     0.493              B to Z              i2_3_lut_4_lut_adj_52
-Route         2   e 1.141                                  n14920
-LUT4        ---     0.493              C to Z              MEMADDR_c_bdd_2_lut_11595_3_lut_4_lut
-Route         1   e 0.941                                  n15688
-LUT4        ---     0.493              D to Z              i3_4_lut_adj_13
-Route         1   e 0.941                                  n8_adj_21
-LUT4        ---     0.493              B to Z              i4_4_lut_adj_12
-Route         1   e 0.941                                  IC_N_535
+Route        83   e 2.520                                  IREG[0]
+LUT4        ---     0.493              A to Z              IREG_7__I_0_765_i9_2_lut_rep_278
+Route        13   e 1.803                                  n15899
+LUT4        ---     0.493              A to Z              i1_2_lut_3_lut_4_lut_adj_72
+Route         1   e 0.941                                  n15_adj_10
+LUT4        ---     0.493              A to Z              i2_4_lut_adj_53
+Route         8   e 1.540                                  n11385
+LUT4        ---     0.493              D to Z              i2_2_lut_4_lut
+Route         1   e 0.941                                  n8_adj_96
+LUT4        ---     0.493              D to Z              i4_4_lut_4_lut
+Route         1   e 0.941                                  n10_adj_87
+LUT4        ---     0.493              B to Z              i5_4_lut
+Route         2   e 1.141                                  n14909
+LUT4        ---     0.493              D to Z              i5_4_lut_adj_36
+Route         1   e 0.941                                  n12
+LUT4        ---     0.493              B to Z              i6_4_lut
+Route         1   e 0.941                                  n14934
+LUT4        ---     0.493              D to Z              i3_4_lut_adj_35
+Route         1   e 0.941                                  n8_adj_197
+LUT4        ---     0.493              B to Z              i4_4_lut_adj_34
+Route         1   e 0.941                                  IC_N_533
                   --------
-                   20.522  (28.6% logic, 71.4% route), 12 logic levels.
+                   18.965  (28.3% logic, 71.7% route), 11 logic levels.
 
 
-Error:  The following path violates requirements by 17.920ns
+Error:  The following path violates requirements by 16.602ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
    Source:         FD1P3AX    CK             IREG_i0_i2  (from MEMADDR_c_12 +)
-   Destination:    FD1S3AX    D              IC_758  (to MEMADDR_c_12 -)
+   Destination:    FD1S3AX    D              IC_720  (to MEMADDR_c_12 -)
 
-   Delay:                  20.260ns  (29.0% logic, 71.0% route), 12 logic levels.
-
- Constraint Details:
-
-     20.260ns data_path IREG_i0_i2 to IC_758 violates
-      2.500ns delay constraint less
-      0.160ns L_S requirement (totaling 2.340ns) by 17.920ns
-
- Path Details: IREG_i0_i2 to IC_758
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              IREG_i0_i2 (from MEMADDR_c_12)
-Route        94   e 2.526                                  IREG[2]
-LUT4        ---     0.493              A to Z              IREG_7__I_0_807_i10_2_lut_rep_230
-Route         8   e 1.540                                  n15817
-LUT4        ---     0.493              B to Z              i1_3_lut_4_lut_adj_57
-Route         1   e 0.941                                  n14969
-LUT4        ---     0.493              C to Z              i2_4_lut_4_lut
-Route         1   e 0.941                                  n6_adj_159
-LUT4        ---     0.493              B to Z              i3_4_lut_adj_176
-Route         2   e 1.141                                  n14832
-LUT4        ---     0.493              C to Z              i1_2_lut_3_lut_4_lut_adj_8
-Route         1   e 0.941                                  n5_adj_145
-LUT4        ---     0.493              A to Z              i3_4_lut_adj_170
-Route         3   e 1.258                                  n11585
-LUT4        ---     0.493              C to Z              i1_2_lut_rep_136_3_lut_4_lut
-Route         2   e 1.141                                  n15723
-LUT4        ---     0.493              B to Z              i2_3_lut_4_lut_adj_52
-Route         2   e 1.141                                  n14920
-LUT4        ---     0.493              C to Z              MEMADDR_c_bdd_2_lut_11595_3_lut_4_lut
-Route         1   e 0.941                                  n15688
-LUT4        ---     0.493              D to Z              i3_4_lut_adj_13
-Route         1   e 0.941                                  n8_adj_21
-LUT4        ---     0.493              B to Z              i4_4_lut_adj_12
-Route         1   e 0.941                                  IC_N_535
-                  --------
-                   20.260  (29.0% logic, 71.0% route), 12 logic levels.
-
-
-Error:  The following path violates requirements by 17.638ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1P3AX    CK             IREG_i0_i2  (from MEMADDR_c_12 +)
-   Destination:    FD1S3AX    D              IC_758  (to MEMADDR_c_12 -)
-
-   Delay:                  19.978ns  (29.4% logic, 70.6% route), 12 logic levels.
+   Delay:                  18.942ns  (28.4% logic, 71.6% route), 11 logic levels.
 
  Constraint Details:
 
-     19.978ns data_path IREG_i0_i2 to IC_758 violates
+     18.942ns data_path IREG_i0_i2 to IC_720 violates
       2.500ns delay constraint less
-      0.160ns L_S requirement (totaling 2.340ns) by 17.638ns
+      0.160ns L_S requirement (totaling 2.340ns) by 16.602ns
 
- Path Details: IREG_i0_i2 to IC_758
+ Path Details: IREG_i0_i2 to IC_720
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              IREG_i0_i2 (from MEMADDR_c_12)
-Route        94   e 2.526                                  IREG[2]
-LUT4        ---     0.493              D to Z              IREG_7__I_0_798_i11_2_lut_rep_200_3_lut_4_lut
-Route         3   e 1.258                                  n15787
-LUT4        ---     0.493              C to Z              i1_3_lut_4_lut_adj_57
-Route         1   e 0.941                                  n14969
-LUT4        ---     0.493              C to Z              i2_4_lut_4_lut
-Route         1   e 0.941                                  n6_adj_159
-LUT4        ---     0.493              B to Z              i3_4_lut_adj_176
-Route         2   e 1.141                                  n14832
-LUT4        ---     0.493              C to Z              i1_2_lut_3_lut_4_lut_adj_8
-Route         1   e 0.941                                  n5_adj_145
-LUT4        ---     0.493              A to Z              i3_4_lut_adj_170
-Route         3   e 1.258                                  n11585
-LUT4        ---     0.493              C to Z              i1_2_lut_rep_136_3_lut_4_lut
-Route         2   e 1.141                                  n15723
-LUT4        ---     0.493              B to Z              i2_3_lut_4_lut_adj_52
-Route         2   e 1.141                                  n14920
-LUT4        ---     0.493              C to Z              MEMADDR_c_bdd_2_lut_11595_3_lut_4_lut
-Route         1   e 0.941                                  n15688
-LUT4        ---     0.493              D to Z              i3_4_lut_adj_13
-Route         1   e 0.941                                  n8_adj_21
-LUT4        ---     0.493              B to Z              i4_4_lut_adj_12
-Route         1   e 0.941                                  IC_N_535
+Route        95   e 2.526                                  IREG[2]
+LUT4        ---     0.493              B to Z              i2_2_lut_rep_280
+Route         6   e 1.457                                  n15901
+LUT4        ---     0.493              C to Z              i1_2_lut_3_lut_4_lut_adj_26
+Route         3   e 1.258                                  n9731
+LUT4        ---     0.493              D to Z              i2_4_lut_adj_53
+Route         8   e 1.540                                  n11385
+LUT4        ---     0.493              D to Z              i2_2_lut_4_lut
+Route         1   e 0.941                                  n8_adj_96
+LUT4        ---     0.493              D to Z              i4_4_lut_4_lut
+Route         1   e 0.941                                  n10_adj_87
+LUT4        ---     0.493              B to Z              i5_4_lut
+Route         2   e 1.141                                  n14909
+LUT4        ---     0.493              D to Z              i5_4_lut_adj_36
+Route         1   e 0.941                                  n12
+LUT4        ---     0.493              B to Z              i6_4_lut
+Route         1   e 0.941                                  n14934
+LUT4        ---     0.493              D to Z              i3_4_lut_adj_35
+Route         1   e 0.941                                  n8_adj_197
+LUT4        ---     0.493              B to Z              i4_4_lut_adj_34
+Route         1   e 0.941                                  IC_N_533
                   --------
-                   19.978  (29.4% logic, 70.6% route), 12 logic levels.
+                   18.942  (28.4% logic, 71.6% route), 11 logic levels.
 
-Warning: 20.682 ns is the maximum delay for this constraint.
+Warning: 19.150 ns is the maximum delay for this constraint.
 
 
 Timing Report Summary
@@ -294,7 +288,7 @@ create_clock -period 5.000000 -name     |             |             |
 clk1 [get_nets clk]                     |     5.000 ns|     4.816 ns|     8  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets MEMADDR_c_12]            |     5.000 ns|    41.364 ns|    12 *
+clk0 [get_nets MEMADDR_c_12]            |     5.000 ns|    38.300 ns|    11 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -304,83 +298,87 @@ clk0 [get_nets MEMADDR_c_12]            |     5.000 ns|    41.364 ns|    12 *
 --------------------------------------------------------------------------------
 Critical Nets                           |   Loads|  Errors| % of total
 --------------------------------------------------------------------------------
-n15796                                  |      16|    2100|     51.27%
+n21                                     |       1|    1635|     39.92%
                                         |        |        |
-n21                                     |       1|    1658|     40.48%
+n3285                                   |       9|    1635|     39.92%
                                         |        |        |
-n3323                                   |       9|    1658|     40.48%
+n26                                     |       2|    1291|     31.52%
                                         |        |        |
-n26                                     |       2|    1324|     32.32%
+n14050                                  |       1|    1291|     31.52%
                                         |        |        |
-n14055                                  |       1|    1324|     32.32%
+n3012                                   |       1|    1143|     27.91%
                                         |        |        |
-n3050                                   |       1|    1131|     27.61%
+n3062                                   |       1|    1143|     27.91%
                                         |        |        |
-n3100                                   |       1|    1131|     27.61%
+n3307                                   |       1|    1143|     27.91%
                                         |        |        |
-n3345                                   |       1|    1131|     27.61%
+co_t_mult_9u_8u_0_2_2_adj_242           |       1|    1092|     26.66%
                                         |        |        |
-n3049                                   |       1|    1102|     26.90%
+n3011                                   |       1|    1092|     26.66%
                                         |        |        |
-n3099                                   |       1|    1102|     26.90%
+n3061                                   |       1|    1092|     26.66%
                                         |        |        |
-co_t_mult_9u_8u_0_2_2_adj_233           |       1|    1095|     26.73%
+mult_9u_8u_0_pp_0_5_adj_118             |       1|     954|     23.29%
                                         |        |        |
-co_mult_9u_8u_0_0_2_adj_174             |       1|     961|     23.46%
+n13985                                  |       1|     928|     22.66%
                                         |        |        |
-n13984                                  |       1|     916|     22.36%
+n13976                                  |       1|     844|     20.61%
                                         |        |        |
-n13975                                  |       1|     838|     20.46%
+n13975                                  |       1|     752|     18.36%
                                         |        |        |
-co_t_mult_9u_8u_0_2_1_adj_241           |       1|     753|     18.38%
+co_t_mult_9u_8u_0_2_1_adj_248           |       1|     747|     18.24%
                                         |        |        |
-n13974                                  |       1|     738|     18.02%
+mco_adj_200                             |       1|     719|     17.55%
                                         |        |        |
-n13983                                  |       1|     676|     16.50%
+n13984                                  |       1|     680|     16.60%
                                         |        |        |
-n3186                                   |       1|     650|     15.87%
+n1372                                   |       1|     643|     15.70%
                                         |        |        |
-n1398                                   |       1|     643|     15.70%
+n3148                                   |       1|     643|     15.70%
                                         |        |        |
-mult_9u_8u_0_pp_0_4_adj_191             |       1|     635|     15.50%
+n3013                                   |       1|     635|     15.50%
                                         |        |        |
-n15794                                  |      24|     627|     15.31%
+n3063                                   |       1|     635|     15.50%
                                         |        |        |
-n15795                                  |       3|     625|     15.26%
+n3308                                   |       1|     635|     15.50%
                                         |        |        |
-n3051                                   |       1|     623|     15.21%
+n15819                                  |      24|     627|     15.31%
                                         |        |        |
-n3101                                   |       1|     623|     15.21%
+mult_9u_8u_0_pp_1_4_adj_245             |       1|     624|     15.23%
                                         |        |        |
-n3346                                   |       1|     623|     15.21%
+n15826                                  |      14|     618|     15.09%
                                         |        |        |
-n15798                                  |      14|     618|     15.09%
+n15820                                  |       3|     592|     14.45%
                                         |        |        |
-n8453                                   |       2|     569|     13.89%
+mult_9u_8u_0_cin_lr_0_adj_201           |       1|     580|     14.16%
                                         |        |        |
-n8454                                   |       2|     567|     13.84%
+n8414                                   |       2|     569|     13.89%
                                         |        |        |
-mult_9u_8u_0_pp_1_7_adj_230             |       1|     560|     13.67%
+n8415                                   |       2|     567|     13.84%
                                         |        |        |
-n13985                                  |       1|     548|     13.38%
+mult_9u_8u_0_pp_1_7_adj_233             |       1|     563|     13.75%
                                         |        |        |
-SCNT[0]                                 |      57|     528|     12.89%
+n13986                                  |       1|     544|     13.28%
                                         |        |        |
-n3170                                   |       1|     527|     12.87%
+n3132                                   |       1|     536|     13.09%
                                         |        |        |
-n3171                                   |       1|     527|     12.87%
+n3133                                   |       1|     536|     13.09%
                                         |        |        |
-n13976                                  |       1|     518|     12.65%
+n13977                                  |       1|     532|     12.99%
                                         |        |        |
-n3187                                   |       1|     488|     11.91%
+n3149                                   |       1|     500|     12.21%
                                         |        |        |
-n3188                                   |       1|     488|     11.91%
+n3150                                   |       1|     500|     12.21%
                                         |        |        |
-SCNT[1]                                 |      36|     473|     11.55%
+SCNT[1]                                 |      32|     489|     11.94%
                                         |        |        |
-SCNT[2]                                 |      33|     473|     11.55%
+SCNT[2]                                 |      30|     489|     11.94%
                                         |        |        |
-n1397                                   |       1|     452|     11.04%
+mco_1_adj_241                           |       1|     463|     11.30%
+                                        |        |        |
+n1371                                   |       1|     449|     10.96%
+                                        |        |        |
+n16424                                  |      13|     441|     10.77%
                                         |        |        |
 --------------------------------------------------------------------------------
 
@@ -388,10 +386,10 @@ n1397                                   |       1|     452|     11.04%
 Timing summary:
 ---------------
 
-Timing errors: 4096  Score: 115885732
+Timing errors: 4096  Score: 115515756
 
-Constraints cover  127518 paths, 1070 nets, and 3474 connections (99.0% coverage)
+Constraints cover  126215 paths, 1089 nets, and 3526 connections (99.0% coverage)
 
 
-Peak memory: 87273472 bytes, TRCE: 8835072 bytes, DLYMAN: 327680 bytes
+Peak memory: 86245376 bytes, TRCE: 8966144 bytes, DLYMAN: 335872 bytes
 CPU_TIME_REPORT: 0 secs 

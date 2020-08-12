@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Aug 10 17:59:50 2020
+Tue Aug 11 19:34:19 2020
 
 
 Command Line:  synthesis -f EBVC_v1_lattice.synproj -gui -msgset C:/Users/Justin/OneDrive/Projects/EBVC/promote.xml 
@@ -99,7 +99,6 @@ WARNING - synthesis: c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(219
 WARNING - synthesis: c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(382): expression size 32 truncated to fit in target size 8. VERI-1209
 WARNING - synthesis: c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(387): expression size 32 truncated to fit in target size 8. VERI-1209
 WARNING - synthesis: c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(437): expression size 9 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(1195): expression size 9 truncated to fit in target size 8. VERI-1209
 Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -107,7 +106,7 @@ Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/or5g00/data/orc5glib.ngl'.
 Loading device for application map from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.11_x64/ispfpga.
 Package Status:                     Preliminary    Version 1.42.
 Top-level module name = Main.
-WARNING - synthesis: Initial value found on net n2060 will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net n2022 will be ignored due to unrecognized driver type
 WARNING - synthesis: I/O Port MEMADDR[5] 's net has no driver and is unused.
 ######## Missing driver on net MEMADDR[5]. Patching with GND.
 
@@ -121,7 +120,7 @@ WARNING - synthesis: I/O Port MEMADDR[5] 's net has no driver and is unused.
 
 Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Analyzing Verilog file mult_9u_8u.v. VERI-1482
-WARNING - synthesis: c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(693): input port a[8] is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(663): input port a[8] is not connected on this instance. VDB-1013
 Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Analyzing Verilog file mult_9u_8u.v. VERI-1482
 INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): replacing existing cell VHI. VERI-1108
@@ -130,7 +129,7 @@ INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS
 INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): replacing existing cell MULT2. VERI-1108
 INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): replacing existing cell VLO. VERI-1108
 INFO - synthesis: mult_9u_8u.v(8): replacing existing cell mult_9u_8u. VERI-1108
-WARNING - synthesis: c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(714): input port a[8] is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(681): input port a[8] is not connected on this instance. VDB-1013
 Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Analyzing Verilog file mult_9u_8u.v. VERI-1482
 INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): replacing existing cell VHI. VERI-1108
@@ -139,7 +138,7 @@ INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS
 INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): replacing existing cell MULT2. VERI-1108
 INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): replacing existing cell VLO. VERI-1108
 INFO - synthesis: mult_9u_8u.v(8): replacing existing cell mult_9u_8u. VERI-1108
-WARNING - synthesis: c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(735): input port a[8] is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(699): input port a[8] is not connected on this instance. VDB-1013
 Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Analyzing Verilog file mult_9u_8u.v. VERI-1482
 INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): replacing existing cell VHI. VERI-1108
@@ -148,7 +147,7 @@ INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS
 INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): replacing existing cell MULT2. VERI-1108
 INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): replacing existing cell VLO. VERI-1108
 INFO - synthesis: mult_9u_8u.v(8): replacing existing cell mult_9u_8u. VERI-1108
-WARNING - synthesis: c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(765): input port a[8] is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/justin/onedrive/projects/ebvc/v1/source/main.v(726): input port a[8] is not connected on this instance. VDB-1013
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 Applying 200.000000 MHz constraint to all clocks
 
@@ -162,17 +161,17 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file EBVC_v1.ngd.
 
 ################### Begin Area Report (Main)######################
-Number of register bits => 149 of 1346 (11 % )
+Number of register bits => 150 of 1346 (11 % )
 AND2 => 16
 CCU2D => 58
 DP8KC => 2
 FADD2B => 52
-FD1P3AX => 97
+FD1P3AX => 98
 FD1S3AX => 52
 GSR => 1
 INV => 1
 L6MUX21 => 8
-LUT4 => 559
+LUT4 => 579
 MULT2 => 40
 OB => 16
 OSCH => 1
@@ -187,33 +186,33 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 2
-  Net : MEMADDR_c_12, loads : 68
+  Net : MEMADDR_c_12, loads : 69
   Net : clk, loads : 13
 Clock Enable Nets
 Number of Clock Enables: 19
 Top 10 highest fanout Clock Enables:
+  Net : MEMADDR_c_12_enable_13, loads : 12
   Net : MEMADDR_c_12_enable_23, loads : 12
-  Net : MEMADDR_c_12_enable_20, loads : 12
-  Net : counter_12__N_25_enable_41, loads : 9
-  Net : counter_12__N_25_enable_13, loads : 8
+  Net : counter_12__N_25_enable_38, loads : 9
+  Net : counter_12__N_25_enable_67, loads : 8
   Net : counter_12__N_25_enable_21, loads : 8
   Net : counter_12__N_25_enable_66, loads : 8
-  Net : counter_12__N_25_enable_65, loads : 8
-  Net : counter_12__N_25_enable_58, loads : 8
+  Net : counter_12__N_25_enable_45, loads : 8
+  Net : counter_12__N_25_enable_13, loads : 8
   Net : counter_12__N_25_enable_30, loads : 8
-  Net : counter_12__N_25_enable_49, loads : 8
+  Net : counter_12__N_25_enable_59, loads : 8
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : IREG_1, loads : 113
-  Net : IREG_2, loads : 94
-  Net : IREG_0, loads : 77
+  Net : IREG_1, loads : 118
+  Net : IREG_2, loads : 95
+  Net : IREG_0, loads : 83
   Net : counter_12__N_25, loads : 75
-  Net : SCNT_0, loads : 57
-  Net : IREG_4, loads : 53
+  Net : IREG_4, loads : 56
+  Net : IREG_6, loads : 49
   Net : ALU_1, loads : 49
   Net : ALU_0, loads : 48
-  Net : IREG_6, loads : 45
-  Net : IREG_5, loads : 45
+  Net : ALU_2, loads : 45
+  Net : IREG_7, loads : 44
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -226,7 +225,7 @@ create_clock -period 5.000000 -name     |             |             |
 clk1 [get_nets clk]                     |  200.000 MHz|  207.641 MHz|     8  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets MEMADDR_c_12]            |  200.000 MHz|   24.176 MHz|    12 *
+clk0 [get_nets MEMADDR_c_12]            |  200.000 MHz|   26.110 MHz|    11 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -234,8 +233,8 @@ clk0 [get_nets MEMADDR_c_12]            |  200.000 MHz|   24.176 MHz|    12 *
 1 constraints not met.
 
 
-Peak Memory Usage: 83.320  MB
+Peak Memory Usage: 82.781  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 2.828  secs
+Elapsed CPU time for LSE flow : 4.156  secs
 --------------------------------------------------------------

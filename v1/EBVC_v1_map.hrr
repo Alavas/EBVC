@@ -3,9 +3,9 @@ Report for cell Main
    Instance path: Main
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     444.00        100.0
-                                  LUT4	     586.00        100.0
+                                  SLIC	     454.00        100.0
+                                  LUT4	     606.00        100.0
                                  IOBUF	         16        100.0
-                                PFUREG	        149        100.0
+                                PFUREG	        150        100.0
                                 RIPPLE	        150        100.0
                                    EBR	          2        100.0
