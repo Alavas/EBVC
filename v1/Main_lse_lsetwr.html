@@ -9,7 +9,7 @@
 <PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Tue Aug 11 19:34:24 2020
+Sun Aug 16 20:51:49 2020
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -158,17 +158,17 @@ Error:  The following path violates requirements by 16.650ns
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
    Source:         FD1P3AX    CK             IREG_i0_i2  (from MEMADDR_c_12 +)
-   Destination:    FD1S3AX    D              IC_720  (to MEMADDR_c_12 -)
+   Destination:    FD1S3AX    D              IPC_720  (to MEMADDR_c_12 -)
 
    Delay:                  18.990ns  (28.3% logic, 71.7% route), 11 logic levels.
 
  Constraint Details:
 
-     18.990ns data_path IREG_i0_i2 to IC_720 violates
+     18.990ns data_path IREG_i0_i2 to IPC_720 violates
       2.500ns delay constraint less
       0.160ns L_S requirement (totaling 2.340ns) by 16.650ns
 
- Path Details: IREG_i0_i2 to IC_720
+ Path Details: IREG_i0_i2 to IPC_720
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              IREG_i0_i2 (from MEMADDR_c_12)
@@ -192,7 +192,7 @@ Route         1   e 0.941                                  n14934
 LUT4        ---     0.493              D to Z              i3_4_lut_adj_35
 Route         1   e 0.941                                  n8_adj_197
 LUT4        ---     0.493              B to Z              i4_4_lut_adj_34
-Route         1   e 0.941                                  IC_N_533
+Route         1   e 0.941                                  IPC_N_533
                   --------
                    18.990  (28.3% logic, 71.7% route), 11 logic levels.
 
@@ -202,17 +202,17 @@ Error:  The following path violates requirements by 16.625ns
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
    Source:         FD1P3AX    CK             IREG_i0_i0  (from MEMADDR_c_12 +)
-   Destination:    FD1S3AX    D              IC_720  (to MEMADDR_c_12 -)
+   Destination:    FD1S3AX    D              IPC_720  (to MEMADDR_c_12 -)
 
    Delay:                  18.965ns  (28.3% logic, 71.7% route), 11 logic levels.
 
  Constraint Details:
 
-     18.965ns data_path IREG_i0_i0 to IC_720 violates
+     18.965ns data_path IREG_i0_i0 to IPC_720 violates
       2.500ns delay constraint less
       0.160ns L_S requirement (totaling 2.340ns) by 16.625ns
 
- Path Details: IREG_i0_i0 to IC_720
+ Path Details: IREG_i0_i0 to IPC_720
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              IREG_i0_i0 (from MEMADDR_c_12)
@@ -236,7 +236,7 @@ Route         1   e 0.941                                  n14934
 LUT4        ---     0.493              D to Z              i3_4_lut_adj_35
 Route         1   e 0.941                                  n8_adj_197
 LUT4        ---     0.493              B to Z              i4_4_lut_adj_34
-Route         1   e 0.941                                  IC_N_533
+Route         1   e 0.941                                  IPC_N_533
                   --------
                    18.965  (28.3% logic, 71.7% route), 11 logic levels.
 
@@ -246,17 +246,17 @@ Error:  The following path violates requirements by 16.602ns
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
    Source:         FD1P3AX    CK             IREG_i0_i2  (from MEMADDR_c_12 +)
-   Destination:    FD1S3AX    D              IC_720  (to MEMADDR_c_12 -)
+   Destination:    FD1S3AX    D              IPC_720  (to MEMADDR_c_12 -)
 
    Delay:                  18.942ns  (28.4% logic, 71.6% route), 11 logic levels.
 
  Constraint Details:
 
-     18.942ns data_path IREG_i0_i2 to IC_720 violates
+     18.942ns data_path IREG_i0_i2 to IPC_720 violates
       2.500ns delay constraint less
       0.160ns L_S requirement (totaling 2.340ns) by 16.602ns
 
- Path Details: IREG_i0_i2 to IC_720
+ Path Details: IREG_i0_i2 to IPC_720
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              IREG_i0_i2 (from MEMADDR_c_12)
@@ -280,7 +280,7 @@ Route         1   e 0.941                                  n14934
 LUT4        ---     0.493              D to Z              i3_4_lut_adj_35
 Route         1   e 0.941                                  n8_adj_197
 LUT4        ---     0.493              B to Z              i4_4_lut_adj_34
-Route         1   e 0.941                                  IC_N_533
+Route         1   e 0.941                                  IPC_N_533
                   --------
                    18.942  (28.4% logic, 71.6% route), 11 logic levels.
 
@@ -400,7 +400,7 @@ Timing errors: 4096  Score: 115515756
 Constraints cover  126215 paths, 1089 nets, and 3526 connections (99.0% coverage)
 
 
-Peak memory: 86245376 bytes, TRCE: 8966144 bytes, DLYMAN: 335872 bytes
+Peak memory: 86405120 bytes, TRCE: 9498624 bytes, DLYMAN: 327680 bytes
 CPU_TIME_REPORT: 0 secs 
 
 

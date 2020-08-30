@@ -1,0 +1,5 @@
+#Start recording tcl command: 8/16/2020 19:32:03
+#Project Location: C:/Users/Justin/OneDrive/Projects/EBVC; Project name: EBVC
+prj_project open "C:/Users/Justin/OneDrive/Projects/EBVC/EBVC.ldf"
+prj_run Export -impl v1 -task Jedecgen
+#Stop recording: 8/16/2020 19:39:15

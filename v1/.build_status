@@ -6,37 +6,37 @@
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1597188884"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1598831532"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1597188867">
-            <Task name="Map" build_result="2" update_result="0" update_time="1597188867"/>
+        <Milestone name="Map" build_result="2" build_time="1597625511">
+            <Task name="Map" build_result="2" update_result="0" update_time="1597625511"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1597188879">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1597188879"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1597188880"/>
+        <Milestone name="PAR" build_result="2" build_time="1598831526">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1598831526"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1598831527"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1597188865">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1597188865"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1597188884"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1597625509">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1597625509"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1597625511"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1597188854"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1597625494"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Report name=".vdbs/EBVC_v1_map.vdb" last_build_time="1597188867" last_build_size="156615"/>
-        <Report name="EBVC_v1.bgn" last_build_time="1597188883" last_build_size="4588"/>
-        <Report name="EBVC_v1.jed" last_build_time="1597188883" last_build_size="350467"/>
-        <Report name="EBVC_v1.lsedata" last_build_time="1597188860" last_build_size="770731"/>
-        <Report name="EBVC_v1.ncd" last_build_time="1597188879" last_build_size="834653"/>
-        <Report name="EBVC_v1.ngd" last_build_time="1597188865" last_build_size="546394"/>
-        <Report name="EBVC_v1.twr" last_build_time="1597188880" last_build_size="47789"/>
-        <Report name="EBVC_v1_map.ncd" last_build_time="1597188866" last_build_size="549469"/>
+        <Report name=".vdbs/EBVC_v1_map.vdb" last_build_time="1597625511" last_build_size="156619"/>
+        <Report name="EBVC_v1.bgn" last_build_time="1598831532" last_build_size="4588"/>
+        <Report name="EBVC_v1.jed" last_build_time="1598831532" last_build_size="350467"/>
+        <Report name="EBVC_v1.lsedata" last_build_time="1597625505" last_build_size="770773"/>
+        <Report name="EBVC_v1.ncd" last_build_time="1598831526" last_build_size="834657"/>
+        <Report name="EBVC_v1.ngd" last_build_time="1597625509" last_build_size="546398"/>
+        <Report name="EBVC_v1.twr" last_build_time="1598831527" last_build_size="47789"/>
+        <Report name="EBVC_v1_map.ncd" last_build_time="1597625510" last_build_size="549473"/>
     </Strategy>
 </BuildStatus>

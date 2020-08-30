@@ -213,7 +213,7 @@
         </nets>
     </instance>
 
-    <instance  name = "HC_I_0_842"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "HCK_I_0_842"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a[31]"  direction = "in"  />
         <pitem  name = "a[30]"  direction = "in"  />
@@ -284,7 +284,7 @@
 
         <nets>
         <nitem  name = "gnd"  />
-        <nitem  name = "HC"  />
+        <nitem  name = "HCK"  />
         <nitem  name = "IREG_7__N_216"  />
         </nets>
     </instance>
@@ -909,7 +909,7 @@
         <nitem  name = "n429"  />
         <nitem  name = "n430"  />
         <nitem  name = "n431"  />
-        <nitem  name = "IC"  />
+        <nitem  name = "IPC"  />
         <nitem  name = "n501"  />
         <nitem  name = "n502"  />
         <nitem  name = "n503"  />
@@ -939,7 +939,7 @@
         <nitem  name = "n497"  />
         <nitem  name = "n498"  />
         <nitem  name = "n499"  />
-        <nitem  name = "IC"  />
+        <nitem  name = "IPC"  />
         <nitem  name = "n510"  />
         <nitem  name = "n511"  />
         <nitem  name = "n512"  />
@@ -6392,8 +6392,8 @@
         <nitem  name = "MEMADDR_1__N_103"  />
         <nitem  name = "pwr"  />
         <nitem  name = "gnd"  />
-        <nitem  name = "IC"  />
-        <nitem  name = "IC_N_536"  />
+        <nitem  name = "IPC"  />
+        <nitem  name = "IPC_N_536"  />
         </nets>
     </instance>
 
@@ -6413,7 +6413,7 @@
         </nets>
     </instance>
 
-    <instance  name = "IC_I_7"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "IPC_I_7"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -6422,10 +6422,10 @@
         </pins>
 
         <nets>
-        <nitem  name = "IC_N_536"  />
-        <nitem  name = "IC"  />
+        <nitem  name = "IPC_N_536"  />
+        <nitem  name = "IPC"  />
         <nitem  name = "CI_N_526"  />
-        <nitem  name = "IC_N_535"  />
+        <nitem  name = "IPC_N_535"  />
         </nets>
     </instance>
 
@@ -6521,7 +6521,7 @@
         </nets>
     </instance>
 
-    <instance  name = "IC_N_536_I_0_840"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "IPC_N_536_I_0_840"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -6530,10 +6530,10 @@
         </pins>
 
         <nets>
-        <nitem  name = "IC_N_536"  />
-        <nitem  name = "IC"  />
+        <nitem  name = "IPC_N_536"  />
+        <nitem  name = "IPC"  />
         <nitem  name = "CI_N_528"  />
-        <nitem  name = "IC_N_537"  />
+        <nitem  name = "IPC_N_537"  />
         </nets>
     </instance>
 
@@ -6630,7 +6630,7 @@
         </nets>
     </instance>
 
-    <instance  name = "IC_N_536_I_0_841"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "IPC_N_536_I_0_841"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -6639,10 +6639,10 @@
         </pins>
 
         <nets>
-        <nitem  name = "IC_N_536"  />
-        <nitem  name = "IC"  />
+        <nitem  name = "IPC_N_536"  />
+        <nitem  name = "IPC"  />
         <nitem  name = "CI_N_530"  />
-        <nitem  name = "IC_N_538"  />
+        <nitem  name = "IPC_N_538"  />
         </nets>
     </instance>
 
@@ -6738,7 +6738,7 @@
         </nets>
     </instance>
 
-    <instance  name = "IC_N_536_I_0"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "IPC_N_536_I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -6747,10 +6747,10 @@
         </pins>
 
         <nets>
-        <nitem  name = "IC_N_536"  />
-        <nitem  name = "IC"  />
+        <nitem  name = "IPC_N_536"  />
+        <nitem  name = "IPC"  />
         <nitem  name = "CI_N_532"  />
-        <nitem  name = "IC_N_539"  />
+        <nitem  name = "IPC_N_539"  />
         </nets>
     </instance>
 
@@ -14465,11 +14465,11 @@
         <nitem  name = "MEMADDR_1__N_61"  />
         <nitem  name = "MEMADDR_6__N_23"  />
         <nitem  name = "MEMADDR_1__N_62"  />
-        <nitem  name = "IC_N_534"  />
+        <nitem  name = "IPC_N_534"  />
         </nets>
     </instance>
 
-    <instance  name = "IC_I_0"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "IPC_I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "sel[4]"  direction = "in"  />
         <pitem  name = "sel[3]"  direction = "in"  />
@@ -14485,17 +14485,17 @@
         </pins>
 
         <nets>
-        <nitem  name = "IC_N_534"  />
+        <nitem  name = "IPC_N_534"  />
         <nitem  name = "MEMADDR_1__N_45"  />
         <nitem  name = "MEMADDR_1__N_46"  />
         <nitem  name = "MEMADDR_1__N_47"  />
         <nitem  name = "MEMADDR_1__N_48"  />
-        <nitem  name = "IC"  />
-        <nitem  name = "IC_N_535"  />
-        <nitem  name = "IC_N_537"  />
-        <nitem  name = "IC_N_538"  />
-        <nitem  name = "IC_N_539"  />
-        <nitem  name = "IC_N_533"  />
+        <nitem  name = "IPC"  />
+        <nitem  name = "IPC_N_535"  />
+        <nitem  name = "IPC_N_537"  />
+        <nitem  name = "IPC_N_538"  />
+        <nitem  name = "IPC_N_539"  />
+        <nitem  name = "IPC_N_533"  />
         </nets>
     </instance>
 
@@ -15876,7 +15876,7 @@
         </nets>
     </instance>
 
-    <instance  name = "HC_I_0"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "HCK_I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -15885,10 +15885,10 @@
         </pins>
 
         <nets>
-        <nitem  name = "HC"  />
+        <nitem  name = "HCK"  />
         <nitem  name = "pwr"  />
         <nitem  name = "MEMADDR_6__N_23"  />
-        <nitem  name = "HC_N_540"  />
+        <nitem  name = "HCK_N_540"  />
         </nets>
     </instance>
 
@@ -16253,7 +16253,7 @@
         </nets>
     </instance>
 
-    <instance  name = "IC_720"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "IPC_720"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "d"  direction = "in"  />
         <pitem  name = "clk"  direction = "in"  />
@@ -16263,10 +16263,10 @@
         </pins>
 
         <nets>
-        <nitem  name = "IC_N_533"  />
+        <nitem  name = "IPC_N_533"  />
         <nitem  name = "counter_12__N_25"  />
         <nitem  name = "gnd"  />
-        <nitem  name = "IC"  />
+        <nitem  name = "IPC"  />
         </nets>
     </instance>
 
@@ -16405,7 +16405,7 @@
         </nets>
     </instance>
 
-    <instance  name = "HC_724"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "HCK_724"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "d"  direction = "in"  />
         <pitem  name = "clk"  direction = "in"  />
@@ -16415,10 +16415,10 @@
         </pins>
 
         <nets>
-        <nitem  name = "HC_N_540"  />
+        <nitem  name = "HCK_N_540"  />
         <nitem  name = "counter_12__N_25"  />
         <nitem  name = "gnd"  />
-        <nitem  name = "HC"  />
+        <nitem  name = "HCK"  />
         </nets>
     </instance>
 
@@ -16594,11 +16594,11 @@
         <reg  name = "SREG[1]_717"  />
         <reg  name = "SREG[0]_718"  />
         <reg  name = "CI_719"  />
-        <reg  name = "IC_720"  />
+        <reg  name = "IPC_720"  />
         <reg  name = "RCNT"  />
         <reg  name = "RS_722"  />
         <reg  name = "PORTA"  />
-        <reg  name = "HC_724"  />
+        <reg  name = "HCK_724"  />
         <reg  name = "counter"  />
     </regs>
 
